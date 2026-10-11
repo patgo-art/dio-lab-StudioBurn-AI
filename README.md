@@ -1,149 +1,165 @@
-# 🤖 Agente Financeiro Inteligente com IA Generativa
+# 🎮 Agente Gaga — Co-piloto Financeiro e Operacional para Game Producers
 
-## Contexto
-
-Os assistentes virtuais no setor financeiro estão evoluindo de simples chatbots reativos para **agentes inteligentes e proativos**. Neste desafio, você vai idealizar e prototipar um agente financeiro que utiliza IA Generativa para:
-
-- **Antecipar necessidades** ao invés de apenas responder perguntas
-- **Personalizar** sugestões com base no contexto de cada cliente
-- **Cocriar soluções** financeiras de forma consultiva
-- **Garantir segurança** e confiabilidade nas respostas (anti-alucinação)
-
-> [!TIP]
-> Na pasta [`examples/`](./examples/) você encontra referências de implementação para cada etapa deste desafio.
+> **Projeto desenvolvido para o Desafio DIO:** *Agente Financeiro Inteligente com IA Generativa*.  
+> **Tema Adaptado:** Gestão de Orçamento (*Burn Rate*), Alocação de Recursos e Análise de Risco/ROI para Estúdios de Jogos Independentes.
 
 ---
 
-## O Que Você Deve Entregar
+## 📌 Contexto
+
+No desenvolvimento de jogos, especialmente no cenário *indie*, o maior risco de um estúdio é ficar sem caixa no meio da produção (o famoso *runway* que acaba antes da versão final / *Gold Master*). 
+
+A **Agente Gaga** une o trabalho de **Game Production** à **Gestão Financeira Proativa**, atuando como uma co-piloto no dia a dia do Producer para:
+
+- **Antecipar estouros de orçamento:** Monitora a velocidade de queima de caixa (*burn rate*) e taxas de refação (*rework*) diretamente na quebra de tarefas.
+- **Sugerir otimizações de escopo:** Recomenda soluções pragmáticas (ex: uso de assets prontos na loja, remanejamento de sprints) sem burocracia.
+- **Separar generativo de determinístico:** O modelo de linguagem gera as tarefas e a comunicação, enquanto scripts Python/SQL rígidos executam toda a matemática financeira.
+- **Blindagem Anti-Alucinação:** Opera sob diretrizes rígidas de *Grounding*, validação de schemas e arquitetura *Human-in-the-Loop*.
+
+---
+
+## 📂 O Que Este Repositório Entrega
 
 ### 1. Documentação do Agente
+Detalhamento da proposta de valor, público-alvo, persona e arquitetura técnica:
+- **Caso de Uso:** Gestão de custos e prevenção de déficit em estúdios de jogos.
+- **Persona & Tom de Voz:** Didática, técnica, cômica e pontualmente irônica.
+- **Arquitetura & Fluxo:** Diagrama Mermaid detalhado com fluxo de *Function Calling* e *Human-in-the-Loop*.
+- **Segurança & Anti-Alucinação:** 4 pilares de proteção (Determinismo, Schemas, Grounding e HITL).
 
-Defina **o que** seu agente faz e **como** ele funciona:
-
-- **Caso de Uso:** Qual problema financeiro ele resolve? (ex: consultoria de investimentos, planejamento de metas, alertas de gastos)
-- **Persona e Tom de Voz:** Como o agente se comporta e se comunica?
-- **Arquitetura:** Fluxo de dados e integração com a base de conhecimento
-- **Segurança:** Como evitar alucinações e garantir respostas confiáveis?
-
-📄 **Template:** [`docs/01-documentacao-agente.md`](./docs/01-documentacao-agente.md)
+📄 **Documento:** [`docs/01-documentacao-agente.md`](./docs/01-documentacao-agente.md)
 
 ---
 
 ### 2. Base de Conhecimento
+Integração de dados reais da indústria de games e engenharia de software com tabelas operacionais mockadas:
 
-Utilize os **dados mockados** disponíveis na pasta [`data/`](./data/) para alimentar seu agente:
+| Arquivo | Formato | Descrição no Projeto |
+|---------|---------|-----------------------|
+| `vgchartz_steam_sales.csv` | CSV | Histórico de vendas, preços médios e benchmarks para cálculo de *breakeven* na Steam. |
+| `software_effort_cocomo.csv` | CSV | Esforço estimado vs. horas reais e taxas de refação (*PROMISE/Cocomo*). |
+| `project_budget_runway.json` | JSON | Tetos de orçamento por Sprint/Milestone, despesas de *outsourcing* e saldo em caixa. |
+| `jira_backlog_history.csv` | CSV | Backlog com metadados técnicos de game dev (polycount, PBR, LODs) e taxas/hora por função. |
 
-| Arquivo | Formato | Descrição |
-|---------|---------|-----------|
-| `transacoes.csv` | CSV | Histórico de transações do cliente |
-| `historico_atendimento.csv` | CSV | Histórico de atendimentos anteriores |
-| `perfil_investidor.json` | JSON | Perfil e preferências do cliente |
-| `produtos_financeiros.json` | JSON | Produtos e serviços disponíveis |
-
-Você pode adaptar ou expandir esses dados conforme seu caso de uso.
-
-📄 **Template:** [`docs/02-base-conhecimento.md`](./docs/02-base-conhecimento.md)
+📄 **Documento:** [`docs/02-base-conhecimento.md`](./docs/02-base-conhecimento.md)
 
 ---
 
 ### 3. Prompts do Agente
+Engenharia de prompts robusta com diretrizes operacionais estritas:
+- **System Prompt:** Regras de conduta, vocabulário da indústria e limitações declaradas.
+- **Estrutura de Resposta Obrigatória:** Respostas padronizadas em 3 blocos (`[BLOCO 1] Tarefas`, `[BLOCO 2] Alerta Financeiro`, `[BLOCO 3] Próximo Passo`).
+- **Exemplos de Interação (*Few-Shot*):** Quebra de tarefas, refação de animação, cotação de áudio terceirizado e simulação de *breakeven*.
+- **Tratamento de Edge Cases:** Guardrails para recusa de direção criativa, dados incompletos, bloqueio de ações autônomas, questões de RH/fiscais e proteção de credenciais.
 
-Documente os prompts que definem o comportamento do seu agente:
-
-- **System Prompt:** Instruções gerais de comportamento e restrições
-- **Exemplos de Interação:** Cenários de uso com entrada e saída esperada
-- **Tratamento de Edge Cases:** Como o agente lida com situações limite
-
-📄 **Template:** [`docs/03-prompts.md`](./docs/03-prompts.md)
+📄 **Documento:** [`docs/03-prompts.md`](./docs/03-prompts.md)
 
 ---
 
 ### 4. Aplicação Funcional
+Protótipo interativo conectando a interface ao modelo com execução determinística:
+- Chatbot interativo em **Streamlit**.
+- Orquestração de ferramentas via **Function Calling** (`calculate_task_cost`, `get_sprint_budget`, etc.).
+- Camada de cálculo matemático em Python livre de alucinações.
 
-Desenvolva um **protótipo funcional** do seu agente:
-
-- Chatbot interativo (sugestão: Streamlit, Gradio ou similar)
-- Integração com LLM (via API ou modelo local)
-- Conexão com a base de conhecimento
-
-📁 **Pasta:** [`src/`](./src/)
+📁 **Código-fonte:** [`src/`](./src/)
 
 ---
 
 ### 5. Avaliação e Métricas
+Critérios de aferição de qualidade e segurança do agente:
+- Taxa de assertividade das estimativas de tempo e custo.
+- 0% de divergência matemática (tolerância zero a contas "de cabeça" da IA).
+- Aderência ao tom de voz e cumprimento estrito dos guardrails de escopo.
 
-Descreva como você avalia a qualidade do seu agente:
-
-**Métricas Sugeridas:**
-- Precisão/assertividade das respostas
-- Taxa de respostas seguras (sem alucinações)
-- Coerência com o perfil do cliente
-
-📄 **Template:** [`docs/04-metricas.md`](./docs/04-metricas.md)
+📄 **Documento:** [`docs/04-metricas.md`](./docs/04-metricas.md)
 
 ---
 
 ### 6. Pitch
+Roteiro estruturado para apresentação de 3 minutos:
+- A dor real da indústria de jogos independentes.
+- Demonstração da Agente Gaga em ação no fluxo do Producer.
+- O diferencial competitivo da arquitetura anti-alucinação.
 
-Grave um **pitch de 3 minutos** (estilo elevador) apresentando:
-
-- Qual problema seu agente resolve?
-- Como ele funciona na prática?
-- Por que essa solução é inovadora?
-
-📄 **Template:** [`docs/05-pitch.md`](./docs/05-pitch.md)
+📄 **Documento:** [`docs/05-pitch.md`](./docs/05-pitch.md)
 
 ---
 
-## Ferramentas Sugeridas
+## 🛠️ Tecnologias e Ferramentas
 
-Todas as ferramentas abaixo possuem versões gratuitas:
-
-| Categoria | Ferramentas |
-|-----------|-------------|
-| **LLMs** | [ChatGPT](https://chat.openai.com/), [Copilot](https://copilot.microsoft.com/), [Gemini](https://gemini.google.com/), [Claude](https://claude.ai/), [Ollama](https://ollama.ai/) |
-| **Desenvolvimento** | [Streamlit](https://streamlit.io/), [Gradio](https://www.gradio.app/), [Google Colab](https://colab.research.google.com/) |
-| **Orquestração** | [LangChain](https://www.langchain.com/), [LangFlow](https://www.langflow.org/), [CrewAI](https://www.crewai.com/) |
-| **Diagramas** | [Mermaid](https://mermaid.js.org/), [Draw.io](https://app.diagrams.net/), [Excalidraw](https://excalidraw.com/) |
+| Categoria | Ferramentas Utilizadas |
+|-----------|------------------------|
+| **LLM & Orquestração** | OpenAI GPT-4 / Function Calling |
+| **Interface / Frontend** | Streamlit |
+| **Cálculo Determinístico & Backend** | Python 3.10+, Pandas, Pydantic |
+| **Bancos de Dados & Contexto** | JSON, SQLite / CSVs Estruturados |
+| **Modelagem e Diagramas** | Mermaid.js |
 
 ---
 
-## Estrutura do Repositório
+## 📁 Estrutura do Repositório
 
-```
-📁 lab-agente-financeiro/
+```bash
+📁 dio-agente-gaga/
 │
-├── 📄 README.md
+├── 📄 README.md                      # Visão geral do projeto (este arquivo)
 │
-├── 📁 data/                          # Dados mockados para o agente
-│   ├── historico_atendimento.csv     # Histórico de atendimentos (CSV)
-│   ├── perfil_investidor.json        # Perfil do cliente (JSON)
-│   ├── produtos_financeiros.json     # Produtos disponíveis (JSON)
-│   └── transacoes.csv                # Histórico de transações (CSV)
+├── 📁 data/                          # Base de conhecimento e dados operacionais
+│   ├── jira_backlog_history.csv      # Histórico de tarefas e esforço técnico
+│   ├── project_budget_runway.json    # Orçamento, caixas e limites da Sprint
+│   ├── software_effort_cocomo.csv    # Benchmarks de esforço e refação
+│   └── vgchartz_steam_sales.csv      # Dados de mercado para simulação de vendas
 │
-├── 📁 docs/                          # Documentação do projeto
-│   ├── 01-documentacao-agente.md     # Caso de uso e arquitetura
-│   ├── 02-base-conhecimento.md       # Estratégia de dados
-│   ├── 03-prompts.md                 # Engenharia de prompts
-│   ├── 04-metricas.md                # Avaliação e métricas
-│   └── 05-pitch.md                   # Roteiro do pitch
+├── 📁 docs/                          # Documentação detalhada do desafio
+│   ├── 01-documentacao-agente.md     # Caso de uso, persona e arquitetura
+│   ├── 02-base-conhecimento.md       # Estratégia de dados e grounding
+│   ├── 03-prompts.md                 # System prompt, cenários e edge cases
+│   ├── 04-metricas.md                # Avaliação de qualidade e segurança
+│   └── 05-pitch.md                   # Roteiro do pitch em vídeo
 │
 ├── 📁 src/                           # Código da aplicação
-│   └── app.py                        # (exemplo de estrutura)
+│   ├── app.py                        # Interface principal em Streamlit
+│   ├── data_manager.py               # Manipulação de dados e RAG local
+│   └── tools.py                      # Funções matemáticas determinísticas
 │
-├── 📁 assets/                        # Imagens e diagramas
-│   └── ...
-│
-└── 📁 examples/                      # Referências e exemplos
-    └── README.md
+└── 📁 assets/                        # Diagramas e prints de tela
+    └── architecture-diagram.png
+
 ```
 
----
+--- 
 
-## Dicas Finais
 
-1. **Comece pelo prompt:** Um bom system prompt é a base de um agente eficaz
-2. **Use os dados mockados:** Eles garantem consistência e evitam problemas com dados sensíveis
-3. **Foque na segurança:** No setor financeiro, evitar alucinações é crítico
-4. **Teste cenários reais:** Simule perguntas que um cliente faria de verdade
-5. **Seja direto no pitch:** 3 minutos passam rápido, vá ao ponto
+# 🚀 Como Executar o Protótipo
+### 1. Clone o repositório:
+
+```bash
+git clone https://github.com/seu-usuario/dio-agente-gaga.git
+cd dio-agente-gaga
+```
+
+### 2. Crie e ative um ambiente virtual:
+```bash
+python -m venv venv
+No Windows:
+venv\Scripts\activate
+No Linux/Mac:
+source venv/bin/activate
+```
+
+### 3. Instale as dependências:
+```bash
+pip install -r requirements.txt
+```
+
+### 4. Configure sua chave de API: Crie um arquivo .env na raiz do projeto com:
+
+```env
+OPENAI_API_KEY="sua-chave-aqui"
+```
+### 5. Inicie o Streamlit:
+```bash
+streamlit run src/app.py
+```
+
