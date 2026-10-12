@@ -1,0 +1,26 @@
+{
+  "projeto": "RunwayGuard AI",
+  "estudio": "Nebula Shift Studios",
+  "milestone_atual": "Alpha",
+  "sprint_atual": 12,
+  "caixa_atual_estudio": 45000.0,
+  "burn_rate_mensal_estimado": 12500.0,
+  "runway_meses_restantes": 3.6,
+  "orcamento_sprints": {
+    "sprint_12": {
+      "orcamento_total": 2500.0,
+      "gasto_atual": 1300.0,
+      "saldo_disponivel": 1200.0
+    },
+    "sprint_13": {
+      "orcamento_total": 2800.0,
+      "gasto_atual": 0.0,
+      "saldo_disponivel": 2800.0
+    }
+  },
+  "previsao_lancamento_steam": {
+    "preco_sugerido_usd": 19.99,
+    "taxa_plataforma_porcentagem": 0.3,
+    "meta_breakeven_copias": 4762
+  }
+}

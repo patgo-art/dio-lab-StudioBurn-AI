@@ -1,0 +1,465 @@
+name,platform,year,genre,publisher,global_sales_mil,critic_score,user_score,avg_price_usd
+Diablo III,PC,2012.0,Role-Playing,Activision,5.2,9.0,8.0,19.99
+StarCraft II: Wings of Liberty,PC,2010.0,Strategy,Activision,4.83,9.3,8.0,19.99
+The Elder Scrolls V: Skyrim,PC,2011.0,Role-Playing,Bethesda Softworks,3.88,9.2,8.0,19.99
+The Sims 4,PC,2014.0,Simulation,Electronic Arts,2.97,7.0,8.0,19.99
+Star Wars: The Old Republic,PC,2011.0,Role-Playing,Electronic Arts,2.97,8.4,8.0,19.99
+Battlefield 3,PC,2011.0,Shooter,Electronic Arts,2.79,8.9,8.0,19.99
+Guild Wars 2,PC,2012.0,Action,NCSoft,2.3,80.0,8.0,19.99
+World of Warcraft: Cataclysm,PC,2010.0,Role-Playing,Activision,2.08,9.0,8.0,19.99
+World of Warcraft: Mists of Pandaria,PC,2012.0,Role-Playing,Activision,1.83,80.0,8.0,19.99
+Call of Duty: Modern Warfare 3,PC,2011.0,Shooter,Activision,1.72,8.0,8.0,19.99
+The Sims 3: Late Night Expansion Pack,PC,2010.0,Simulation,Electronic Arts,1.71,7.5,8.0,19.99
+Sid Meier's Civilization V,PC,2010.0,Strategy,Take-Two Interactive,1.69,8.9,8.0,19.99
+StarCraft II: Heart of the Swarm,PC,2013.0,Strategy,Activision,1.67,8.9,8.0,19.99
+Call of Duty: Black Ops II,PC,2012.0,Shooter,Activision,1.53,80.0,8.0,19.99
+Football Manager 2012,PC,2011.0,Sports,Sega,1.51,8.5,8.0,19.99
+Final Fantasy XIV: A Realm Reborn,PC,2010.0,Role-Playing,Square Enix,1.5,80.0,8.0,19.99
+Anno 2070,PC,2011.0,Strategy,Ubisoft,1.45,8.7,8.0,19.99
+SimCity (2013),PC,2013.0,Simulation,Electronic Arts,1.44,80.0,8.0,19.99
+Battlefield 4,PC,2013.0,Shooter,Electronic Arts,1.4,80.0,8.0,19.99
+Football Manager 2011,PC,2010.0,Sports,Sega,1.26,8.9,8.0,19.99
+Farming Simulator 2015,PC,2014.0,Simulation,Focus Home Interactive,1.23,80.0,8.0,19.99
+Fallout 4,PC,2015.0,Role-Playing,Bethesda Softworks,1.23,9.0,8.0,19.99
+Football Manager 2013,PC,2012.0,Sports,Sega,1.17,80.0,8.0,19.99
+Fallout: New Vegas,PC,2010.0,Role-Playing,Bethesda Softworks,1.16,8.3,8.0,19.99
+Grand Theft Auto V,PC,2015.0,Action,Take-Two Interactive,1.08,80.0,8.0,19.99
+Farming Simulator 2013,PC,2012.0,Simulation,Focus Home Interactive,0.99,80.0,8.0,19.99
+Far Cry 3,PC,2012.0,Shooter,Ubisoft,0.98,80.0,8.0,19.99
+Mass Effect 3,PC,2012.0,Role-Playing,Electronic Arts,0.97,80.0,8.0,19.99
+The Witcher 2: Assassins of Kings,PC,2011.0,Action,Namco Bandai Games,0.96,8.8,8.0,19.99
+Assassin's Creed III,PC,2012.0,Action,Ubisoft,0.94,8.6,8.0,19.99
+Borderlands 2,PC,2012.0,Shooter,Take-Two Interactive,0.93,80.0,8.0,19.99
+The Elder Scrolls Online,PC,2014.0,Role-Playing,Bethesda Softworks,0.9,80.0,8.0,19.99
+Portal 2,PC,2011.0,Shooter,Valve Software,0.76,9.7,8.0,19.99
+Assassin's Creed: Revelations,PC,2011.0,Action,Ubisoft,0.76,80.0,8.0,19.99
+Total War: Rome II,PC,2013.0,Strategy,Sega,0.76,8.0,8.0,19.99
+Crysis 2,PC,2011.0,Action,Electronic Arts,0.74,8.7,8.0,19.99
+Call of Duty: Ghosts,PC,2013.0,Shooter,Activision,0.73,8.8,8.0,19.99
+Dragon Age: Inquisition,PC,2014.0,Role-Playing,Electronic Arts,0.73,80.0,8.0,19.99
+XCOM: Enemy Unknown,PC,2012.0,Strategy,Take-Two Interactive,0.72,9.0,8.0,19.99
+Battlefield: Bad Company 2,PC,2010.0,Shooter,Electronic Arts,0.71,8.8,8.0,19.99
+Football Manager 2014,PC,2013.0,Sports,Sega,0.71,8.4,8.0,19.99
+Assassin's Creed IV: Black Flag,PC,2013.0,Action,Ubisoft,0.69,8.5,8.0,19.99
+The Sims: Medieval,PC,2011.0,Simulation,Electronic Arts,0.69,7.2,8.0,19.99
+The Witcher 3: Wild Hunt,PC,2015.0,Role-Playing,Namco Bandai Games,0.67,80.0,8.0,19.99
+RIFT,PC,2011.0,Role-Playing,Unknown,0.67,8.3,8.0,19.99
+BioShock Infinite,PC,2013.0,Shooter,Take-Two Interactive,0.67,80.0,8.0,19.99
+The Sims 3: High-End Loft Stuff,PC,2010.0,Simulation,Electronic Arts,0.67,80.0,8.0,19.99
+Rocksmith 2014,PC,2013.0,Misc,Ubisoft,0.66,9.0,8.0,19.99
+Napoleon: Total War,PC,2010.0,Strategy,Sega,0.66,8.5,8.0,19.99
+Crysis 3,PC,2013.0,Shooter,Electronic Arts,0.64,7.5,8.0,19.99
+Dragon Age II,PC,2011.0,Action,Electronic Arts,0.64,7.9,8.0,19.99
+The Sims 3: Generations,PC,2011.0,Simulation,Electronic Arts,0.63,6.5,8.0,19.99
+Far Cry 4,PC,2014.0,Shooter,Ubisoft,0.62,8.5,8.0,19.99
+Assassin's Creed: Brotherhood,PC,2011.0,Action,Ubisoft,0.59,8.7,8.0,19.99
+Total War: Shogun 2,PC,2011.0,Strategy,Sega,0.59,80.0,8.0,19.99
+Deus Ex: Human Revolution,PC,2011.0,Shooter,Square Enix,0.59,8.7,8.0,19.99
+Titanfall,PC,2014.0,Shooter,Electronic Arts,0.58,80.0,8.0,19.99
+Assassin's Creed II,PC,2010.0,Action,Ubisoft,0.57,8.5,8.0,19.99
+Assassin's Creed: Unity,PC,2014.0,Action,Ubisoft,0.55,80.0,8.0,19.99
+Star Wars Battlefront (2015),PC,2015.0,Shooter,Electronic Arts,0.54,7.5,8.0,19.99
+Batman: Arkham City,PC,2011.0,Action,Warner Bros. Interactive Entertainment,0.53,9.0,8.0,19.99
+StarCraft II: Legacy of the Void,PC,2015.0,Strategy,Activision,0.51,80.0,8.0,19.99
+StarCraft II: Legacy of the Void,PC,2015.0,Strategy,Activision,0.51,8.8,8.0,19.99
+Dishonored,PC,2012.0,Action,Bethesda Softworks,0.51,80.0,8.0,19.99
+Medal of Honor,PC,2010.0,Shooter,Electronic Arts,0.49,80.0,8.0,19.99
+World of Warcraft: Warlords of Draenor,PC,2014.0,Action,Activision Blizzard,0.48,80.0,8.0,19.99
+Football Manager 2015,PC,2014.0,Simulation,Sega,0.48,80.0,8.0,19.99
+The Sims 3: Ambitions,PC,2010.0,Simulation,Electronic Arts,0.47,7.9,8.0,19.99
+FIFA 12,PC,2011.0,Sports,Electronic Arts,0.47,80.0,8.0,19.99
+The Sims 3: Outdoor Living Stuff,PC,2011.0,Simulation,Electronic Arts,0.47,80.0,8.0,19.99
+Wolfenstein: The New Order,PC,2014.0,Shooter,Bethesda Softworks,0.46,80.0,8.0,19.99
+Watch Dogs,PC,2014.0,Action,Ubisoft,0.45,80.0,8.0,19.99
+FIFA 14,PC,2013.0,Sports,Electronic Arts,0.43,80.0,8.0,19.99
+Overwatch,PC,2016.0,Shooter,Activision,0.43,9.5,8.0,19.99
+Max Payne 3,PC,2012.0,Shooter,Take-Two Interactive,0.43,9.0,8.0,19.99
+Call of Duty: Advanced Warfare,PC,2014.0,Shooter,Activision,0.41,8.6,8.0,19.99
+Duke Nukem Forever,PC,2011.0,Shooter,Take-Two Interactive,0.41,4.6,8.0,19.99
+FIFA Soccer 13,PC,2012.0,Action,Electronic Arts,0.41,80.0,8.0,19.99
+Mafia II,PC,2010.0,Action,Take-Two Interactive,0.4,7.6,8.0,19.99
+Mass Effect 2,PC,2010.0,Role-Playing,Electronic Arts,0.4,9.6,8.0,19.99
+Saints Row: The Third,PC,2011.0,Action,THQ,0.38,8.3,8.0,19.99
+Need for Speed: Hot Pursuit,PC,2010.0,Racing,Electronic Arts,0.38,8.9,8.0,19.99
+Tom Clancy's The Division,PC,2016.0,Shooter,Ubisoft,0.37,80.0,8.0,19.99
+Rage,PC,2011.0,Shooter,Bethesda Softworks,0.37,7.8,8.0,19.99
+Sid Meier's Civilization: Beyond Earth,PC,2014.0,Strategy,Take-Two Interactive,0.37,80.0,8.0,19.99
+Need for Speed: The Run,PC,2011.0,Action,Electronic Arts,0.37,80.0,8.0,19.99
+Middle-Earth: Shadow of Mordor,PC,2014.0,Action,Warner Bros. Interactive Entertainment,0.36,80.0,8.0,19.99
+Company of Heroes 2,PC,2013.0,Strategy,THQ,0.36,80.0,8.0,19.99
+The Sims 3: Town Life Stuff,PC,2011.0,Simulation,Electronic Arts,0.34,80.0,8.0,19.99
+Medal of Honor: Warfighter,PC,2012.0,Action,Electronic Arts,0.33,80.0,8.0,19.99
+Dead Space 2,PC,2011.0,Shooter,Electronic Arts,0.33,8.9,8.0,19.99
+Batman: Arkham Origins,PC,2013.0,Action,Warner Bros. Interactive Entertainment,0.32,80.0,8.0,19.99
+The Settlers 7: Paths to a Kingdom,PC,2010.0,Strategy,Ubisoft,0.32,7.8,8.0,19.99
+Fable III,PC,2011.0,Role-Playing,Microsoft Game Studios,0.32,7.0,8.0,19.99
+Might & Magic Heroes VI,PC,2011.0,Role-Playing,Ubisoft,0.31,7.4,8.0,19.99
+Football Manager 2016,PC,2015.0,Simulation,Sega,0.31,80.0,8.0,19.99
+Kingdoms of Amalur: Reckoning,PC,2012.0,Role-Playing,Electronic Arts,0.31,80.0,8.0,19.99
+FIFA 15,PC,2014.0,Sports,Electronic Arts,0.3,7.0,8.0,19.99
+World of Tanks,PC,2011.0,Shooter,Wargaming.net,0.29,7.8,8.0,19.99
+Borderlands: The Pre-Sequel,PC,2014.0,Shooter,Take-Two Interactive,0.29,80.0,8.0,19.99
+World of Warcraft: Legion,PC,2016.0,Role-Playing,Activision,0.29,80.0,8.0,19.99
+Mass Effect Trilogy,PC,2012.0,Action,Electronic Arts,0.28,80.0,8.0,19.99
+R.U.S.E.,PC,2010.0,Strategy,Ubisoft,0.28,8.0,8.0,19.99
+The Evil Within,PC,2014.0,Action,Bethesda Softworks,0.27,5.5,8.0,19.99
+Tropico 4,PC,2011.0,Strategy,Kalypso Media,0.27,7.9,8.0,19.99
+Need for Speed Rivals,PC,2013.0,Racing,Electronic Arts,0.27,80.0,8.0,19.99
+Silent Hunter 5: Battle of the Atlantic,PC,2010.0,Simulation,Ubisoft,0.26,80.0,8.0,19.99
+LEGO Star Wars III: The Clone Wars,PC,2011.0,Action,LucasArts,0.26,7.6,8.0,19.99
+L.A. Noire: The Complete Edition,PC,2011.0,Adventure,Take-Two Interactive,0.25,80.0,8.0,19.99
+Hitman: Absolution,PC,2012.0,Action,Square Enix,0.25,9.0,8.0,19.99
+Anno 2205,PC,2015.0,Strategy,Ubisoft,0.25,80.0,8.0,19.99
+Homefront,PC,2011.0,Shooter,THQ,0.24,6.6,8.0,19.99
+Metro 2033,PC,2010.0,Shooter,THQ,0.24,80.0,8.0,19.99
+Angry Birds,PC,2011.0,Puzzle,Focus Home Interactive,0.24,80.0,8.0,19.99
+DC Universe Online,PC,2011.0,Role-Playing,Sony Online Entertainment,0.24,7.0,8.0,19.99
+Total War: Attila,PC,2015.0,Strategy,Sega,0.23,80.0,8.0,19.99
+Call of Duty: Black Ops 3,PC,2015.0,Shooter,Activision,0.23,80.0,8.0,19.99
+Risen 2: Dark Waters,PC,2012.0,Role-Playing,Deep Silver,0.23,6.6,8.0,19.99
+Spec Ops: The Line,PC,2012.0,Shooter,Take-Two Interactive,0.23,80.0,8.0,19.99
+LEGO The Lord of the Rings,PC,2012.0,Action,Warner Bros. Interactive Entertainment,0.22,80.0,8.0,19.99
+Tom Clancy's Rainbow Six: Siege,PC,2015.0,Shooter,Ubisoft,0.22,80.0,8.0,19.99
+Dead Island,PC,2011.0,Action,Deep Silver,0.22,7.1,8.0,19.99
+Defiance,PC,2013.0,Shooter,Trion Worlds,0.21,80.0,8.0,19.99
+Two Worlds II,PC,2011.0,Role-Playing,Unknown,0.2,6.9,8.0,19.99
+"Warhammer 40,000: Space Marine",PC,2011.0,Shooter,THQ,0.2,7.7,8.0,19.99
+Assassin's Creed Syndicate,PC,2015.0,Action,Ubisoft,0.2,80.0,8.0,19.99
+XCOM 2,PC,2016.0,Strategy,Take-Two Interactive,0.2,80.0,8.0,19.99
+Total War: Shogun 2 - Fall of the Samurai,PC,2012.0,Strategy,Sega,0.2,80.0,8.0,19.99
+South Park: The Stick of Truth,PC,2014.0,Role-Playing,Ubisoft,0.2,80.0,8.0,19.99
+Metro: Last Light,PC,2013.0,Action,Deep Silver,0.19,80.0,8.0,19.99
+Aliens vs Predator,PC,2010.0,Shooter,Sega,0.19,6.2,8.0,19.99
+The Sims 4: Get Together,PC,2015.0,Simulation,Electronic Arts,0.19,80.0,8.0,19.99
+Supreme Commander 2,PC,2010.0,Strategy,Square Enix,0.19,7.5,8.0,19.99
+Tom Clancy's Splinter Cell: Blacklist,PC,2013.0,Action,Ubisoft,0.19,8.9,8.0,19.99
+Need for Speed: Shift 2 Unleashed,PC,2011.0,Racing,Electronic Arts,0.19,8.6,8.0,19.99
+Saints Row IV,PC,2013.0,Action,Deep Silver,0.19,80.0,8.0,19.99
+NBA 2K11,PC,2010.0,Action,Take-Two Interactive,0.19,80.0,8.0,19.99
+Arcania: Gothic 4,PC,2010.0,Role-Playing,JoWood Productions,0.19,5.8,8.0,19.99
+F1 2011,PC,2011.0,Racing,Codemasters,0.19,8.1,8.0,19.99
+The Lord of the Rings: War in the North,PC,2011.0,Action,Warner Bros. Interactive Entertainment,0.18,6.5,8.0,19.99
+Evolve,PC,2015.0,Shooter,Take-Two Interactive,0.18,80.0,8.0,19.99
+Driver: San Francisco,PC,2011.0,Racing,Ubisoft,0.18,8.3,8.0,19.99
+Dying Light,PC,2015.0,Action,Warner Bros. Interactive Entertainment,0.18,80.0,8.0,19.99
+FIFA Soccer 11,PC,2010.0,Sports,Electronic Arts,0.18,8.4,8.0,19.99
+LEGO Marvel Super Heroes,PC,2013.0,Action,Warner Bros. Interactive Entertainment,0.18,80.0,8.0,19.99
+Aliens: Colonial Marines,PC,2013.0,Shooter,Sega,0.18,80.0,8.0,19.99
+Dark Souls II,PC,2014.0,Role-Playing,Namco Bandai Games,0.18,80.0,8.0,19.99
+Tom Clancy's Ghost Recon: Future Soldier,PC,2012.0,Shooter,Ubisoft,0.18,80.0,8.0,19.99
+Brink,PC,2011.0,Shooter,Bethesda Softworks,0.18,7.0,8.0,19.99
+FIFA 16,PC,2015.0,Sports,Electronic Arts,0.18,8.5,8.0,19.99
+Doom (2016),PC,2016.0,Shooter,Bethesda Softworks,0.18,80.0,8.0,19.99
+Monkey Island: Special Edition Collection,PC,2011.0,Adventure,LucasArts,0.17,80.0,8.0,19.99
+Dungeon Siege III,PC,2011.0,Role-Playing,Square Enix,0.17,7.3,8.0,19.99
+The Secret World,PC,2012.0,Role-Playing,Funcom,0.17,80.0,8.0,19.99
+Wildstar,PC,2014.0,Role-Playing,NCSoft,0.17,80.0,8.0,19.99
+The Sims 3: Seasons,PC,2012.0,Simulation,Electronic Arts,0.17,80.0,8.0,19.99
+Stronghold 3,PC,2011.0,Strategy,,0.16,4.1,8.0,19.99
+NBA 2K12,PC,2011.0,Sports,Take-Two Interactive,0.16,8.5,8.0,19.99
+The Crew,PC,2014.0,Racing,Ubisoft,0.16,80.0,8.0,19.99
+Bulletstorm,PC,2011.0,Shooter,Electronic Arts,0.16,8.7,8.0,19.99
+Sniper: Ghost Warrior,PC,2010.0,Shooter,City Interactive,0.16,5.4,8.0,19.99
+DiRT 3,PC,2011.0,Racing,Codemasters,0.16,9.0,8.0,19.99
+Darksiders II,PC,2012.0,Action,Nordic Games,0.16,7.8,8.0,19.99
+F.E.A.R. 3,PC,2011.0,Shooter,Warner Bros. Interactive Entertainment,0.15,7.5,8.0,19.99
+Deponia,PC,2012.0,Adventure,Daedalic,0.15,80.0,8.0,19.99
+Darksiders,PC,2010.0,Action,THQ,0.15,8.0,8.0,19.99
+The Sims Medieval: Pirates and Nobles,PC,2011.0,Simulation,Electronic Arts,0.15,5.5,8.0,19.99
+Terraria,PC,2011.0,Action,Unknown,0.15,8.8,8.0,19.99
+F1 2012,PC,2012.0,Racing,Codemasters,0.15,8.8,8.0,19.99
+Alien: Isolation,PC,2014.0,Shooter,Sega,0.15,80.0,8.0,19.99
+Dragon Age: Origins - Ultimate Edition,PC,2010.0,Role-Playing,Electronic Arts,0.14,80.0,8.0,19.99
+Just Cause 3,PC,2015.0,Action,Square Enix,0.14,7.6,8.0,19.99
+The Darkness II,PC,2012.0,Shooter,Take-Two Interactive,0.14,80.0,8.0,19.99
+Cities: Skylines,PC,2015.0,Simulation,Paradox Interactive,0.14,80.0,8.0,19.99
+Far Cry: Primal,PC,2016.0,Action,Ubisoft,0.14,8.0,8.0,19.99
+Dead Rising 2,PC,2010.0,Action,Capcom,0.14,7.7,8.0,19.99
+Dragon Age Origins: Awakening,PC,2010.0,Role-Playing,Electronic Arts,0.14,8.3,8.0,19.99
+Battlefield: Hardline,PC,2015.0,Shooter,Electronic Arts,0.14,80.0,8.0,19.99
+Red Orchestra 2: Heroes of Stalingrad,PC,2011.0,Shooter,Tripwire Interactive,0.14,7.7,8.0,19.99
+Euro Truck Simulator 2,PC,2012.0,Action,SCS Software,0.13,8.5,8.0,19.99
+Farming Simulator 2011,PC,2010.0,Simulation,,0.13,80.0,8.0,19.99
+Just Cause 2,PC,2010.0,Action,Square Enix,0.13,8.2,8.0,19.99
+Batman: Arkham Knight,PC,2015.0,Action,Warner Bros. Interactive Entertainment,0.13,80.0,8.0,19.99
+Sleeping Dogs,PC,2012.0,Action,Square Enix,0.12,8.5,8.0,19.99
+Alice: Madness Returns,PC,2011.0,Adventure,Electronic Arts,0.12,6.7,8.0,19.99
+ArmA III,PC,2013.0,Shooter,Bohemia Interactive,0.12,80.0,8.0,19.99
+Tropico 5,PC,2014.0,Simulation,Kalypso Media,0.12,80.0,8.0,19.99
+Lost Horizon,PC,2010.0,Adventure,Deep Silver,0.12,80.0,8.0,19.99
+Darkspore,PC,2011.0,Role-Playing,Electronic Arts,0.12,6.6,8.0,19.99
+Pro Evolution Soccer 2014,PC,2013.0,Action,Konami Digital Entertainment,0.11,8.3,8.0,19.99
+Stronghold Kingdoms,PC,2011.0,Strategy,DTP Entertainment,0.11,80.0,8.0,19.99
+18 Wheels of Steel: Extreme Trucker 2,PC,2011.0,Racing,Rondomedia,0.11,80.0,8.0,19.99
+Project CARS,PC,2015.0,Racing,Slightly Mad Studios,0.11,80.0,8.0,19.99
+Thief (2014),PC,2014.0,Action,Square Enix,0.11,80.0,8.0,19.99
+Call of Juarez: The Cartel,PC,2011.0,Shooter,Ubisoft,0.11,4.5,8.0,19.99
+Sonic Generations,PC,2011.0,Platform,Sega,0.11,8.3,8.0,19.99
+Tom Clancy's Splinter Cell: Conviction,PC,2010.0,Action,Ubisoft,0.11,8.0,8.0,19.99
+Total War: WARHAMMER,PC,2016.0,Strategy,Sega,0.1,80.0,8.0,19.99
+[Prototype 2],PC,2012.0,Action,Activision,0.1,80.0,8.0,19.99
+Harry Potter and the Deathly Hallows - Part 1,PC,2010.0,Action,Electronic Arts,0.1,80.0,8.0,19.99
+Harry Potter and the Deathly Hallows - Part 2,PC,2011.0,Action,Electronic Arts,0.1,4.3,8.0,19.99
+"Warhammer 40,000: Dawn of War II - Chaos Rising",PC,2010.0,Strategy,THQ,0.1,8.6,8.0,19.99
+F1 2014,PC,2014.0,Racing,Codemasters,0.1,80.0,8.0,19.99
+Rise of the Tomb Raider,PC,2016.0,Adventure,Square Enix,0.1,80.0,8.0,19.99
+Wasteland 2,PC,2015.0,Role-Playing,inXile Entertainment,0.1,80.0,8.0,19.99
+Skylanders: Spyro's Adventure,PC,2011.0,Action,Activision,0.1,80.0,8.0,19.99
+Ghostbusters: The Video Game (DS Version),PC,2010.0,Action,Take-Two Interactive,0.09,80.0,8.0,19.99
+Angry Birds: Rio,PC,2011.0,Puzzle,Focus Home Interactive,0.09,80.0,8.0,19.99
+Risen 3: Titan Lords,PC,2014.0,Role-Playing,Deep Silver,0.09,80.0,8.0,19.99
+Dungeons,PC,2011.0,Strategy,Kalypso Media,0.09,6.5,8.0,19.99
+NBA 2K16,PC,2015.0,Sports,Take-Two Interactive,0.09,80.0,8.0,19.99
+Pro Evolution Soccer 2012,PC,2011.0,Action,Konami Digital Entertainment,0.09,7.0,8.0,19.99
+Red Faction: Armageddon,PC,2011.0,Shooter,THQ,0.09,7.3,8.0,19.99
+Gray Matter,PC,2011.0,Adventure,DTP Entertainment,0.09,7.3,8.0,19.99
+Might & Magic Heroes VII,PC,2015.0,Strategy,Ubisoft,0.09,80.0,8.0,19.99
+Pro Evolution Soccer 2013,PC,2012.0,Sports,Konami Digital Entertainment,0.09,80.0,8.0,19.99
+Edna & Harvey: Harvey's New Eyes,PC,2011.0,Adventure,Rondomedia,0.09,80.0,8.0,19.99
+Wildlife Park 3,PC,2011.0,Simulation,bitComposer Games,0.08,80.0,8.0,19.99
+Sniper: Ghost Warrior 2,PC,2013.0,Shooter,City Interactive,0.08,80.0,8.0,19.99
+X Rebirth,PC,2013.0,Simulation,Koch Media,0.08,80.0,8.0,19.99
+Game of Thrones,PC,2012.0,Role-Playing,Focus Home Interactive,0.08,80.0,8.0,19.99
+Bejeweled 3,PC,2010.0,Puzzle,PopCap Games,0.08,8.1,8.0,19.99
+Major League Baseball 2K11,PC,2011.0,Sports,Take-Two Interactive,0.08,80.0,8.0,19.99
+Wolfenstein: The Old Blood,PC,2015.0,Action,Bethesda Softworks,0.08,80.0,8.0,19.99
+The Sims 3: Fast Lane Stuff,PC,2010.0,Simulation,Electronic Arts,0.08,80.0,8.0,19.99
+"Warhammer 40,000: Dawn of War II - Retribution",PC,2011.0,Strategy,THQ,0.08,7.9,8.0,19.99
+Serious Sam 3: BFE,PC,2011.0,Shooter,Mastertronic,0.08,7.0,8.0,19.99
+The First Templar,PC,2011.0,Action,Kalypso Media,0.08,80.0,8.0,19.99
+Minecraft: Story Mode,PC,2015.0,Adventure,Mojang,0.08,80.0,8.0,19.99
+Rayman Origins,PC,2012.0,Platform,Ubisoft,0.08,80.0,8.0,19.99
+Need for Speed: Most Wanted,PC,2012.0,Racing,Electronic Arts,0.08,80.0,8.0,19.99
+Metal Gear Solid V: The Phantom Pain,PC,2015.0,Action,Konami Digital Entertainment,0.08,80.0,8.0,19.99
+The Sims 3: Barnacle Bay,PC,2011.0,Simulation,Electronic Arts,0.07,80.0,8.0,19.99
+Goodbye Deponia,PC,2013.0,Adventure,Daedalic Entertainment,0.07,80.0,8.0,19.99
+Pro Farm 1,PC,2011.0,Simulation,Excalibur Publishing,0.07,80.0,8.0,19.99
+Dark Souls,PC,2012.0,Role-Playing,Namco Bandai Games,0.07,80.0,8.0,19.99
+The Testament of Sherlock Holmes,PC,2012.0,Adventure,Focus Home Interactive,0.07,80.0,8.0,19.99
+Operation Flashpoint: Red River,PC,2011.0,Shooter,Codemasters,0.07,7.0,8.0,19.99
+Kane & Lynch 2: Dog Days,PC,2010.0,Shooter,Square Enix,0.07,6.5,8.0,19.99
+Emergency 2012,PC,2010.0,Simulation,Deep Silver,0.07,80.0,8.0,19.99
+Battleborn,PC,2016.0,Shooter,Take-Two Interactive,0.07,80.0,8.0,19.99
+Assassin's Creed: Rogue,PC,2015.0,Action,Ubisoft,0.07,80.0,8.0,19.99
+GRID 2,PC,2013.0,Racing,Codemasters,0.07,80.0,8.0,19.99
+Alan Wake,PC,2012.0,Action,Nordic Games,0.07,80.0,8.0,19.99
+Cities XL 2012,PC,2011.0,Strategy,Focus Home Interactive,0.07,6.0,8.0,19.99
+TRON: Evolution,PC,2010.0,Action,Disney Interactive Studios,0.07,80.0,8.0,19.99
+Pro Evolution Soccer 2015,PC,2014.0,Sports,Konami Digital Entertainment,0.07,80.0,8.0,19.99
+The LEGO Movie Videogame,PC,2014.0,Action,Warner Bros. Interactive Entertainment,0.06,80.0,8.0,19.99
+The Book of Unwritten Tales: The Critter Chronicles,PC,2011.0,Action,Crimson Cow,0.06,80.0,8.0,19.99
+Lego Batman 3: Beyond Gotham,PC,2014.0,Action,Warner Bros. Interactive Entertainment,0.06,80.0,8.0,19.99
+Age of Empires Online,PC,2011.0,Strategy,Microsoft Game Studios,0.06,7.0,8.0,19.99
+Blur,PC,2010.0,Racing,Activision,0.06,8.1,8.0,19.99
+The Next BIG Thing,PC,2011.0,Adventure,Focus Home Interactive,0.06,6.8,8.0,19.99
+A New Beginning,PC,2010.0,Adventure,Deep Silver,0.06,80.0,8.0,19.99
+Dead Rising 2: Off the Record,PC,2011.0,Action,Capcom,0.06,6.8,8.0,19.99
+EverQuest II: Destiny of Velious,PC,2011.0,Role-Playing,Sony Online Entertainment,0.06,80.0,8.0,19.99
+Remember Me,PC,2013.0,Action,Capcom,0.06,80.0,8.0,19.99
+Create,PC,2010.0,Action,Electronic Arts,0.06,6.0,8.0,19.99
+pro evolution soccer 2011,PC,2010.0,Sports,Konami Digital Entertainment,0.06,80.0,8.0,19.99
+Murdered: Soul Suspect,PC,2014.0,Action,Square Enix,0.06,80.0,8.0,19.99
+F1 2010,PC,2010.0,Racing,Codemasters,0.06,8.0,8.0,19.99
+The Lost Chronicles of Zerzura,PC,2012.0,Adventure,DTP Entertainment,0.06,80.0,8.0,19.99
+Ski Region Simulator,PC,2011.0,Simulation,Excalibur Publishing,0.06,80.0,8.0,19.99
+Airline Tycoon 2,PC,2011.0,Simulation,Kalypso Media,0.05,80.0,8.0,19.99
+IL-2 Sturmovik: Cliffs of Dover,PC,2011.0,Simulation,Ubisoft,0.05,5.0,8.0,19.99
+Front Mission Evolved,PC,2010.0,Shooter,Square Enix,0.05,80.0,8.0,19.99
+Dark Souls III,PC,2016.0,Role-Playing,Namco Bandai Games,0.05,80.0,8.0,19.99
+Tom Clancy's HAWX 2,PC,2010.0,Action,Ubisoft,0.05,80.0,8.0,19.99
+FIFA 17,PC,2016.0,Sports,Electronic Arts,0.05,80.0,8.0,19.99
+Hunted: The Demon's Forge,PC,2011.0,Action,Bethesda Softworks,0.05,6.1,8.0,19.99
+The Bureau: XCOM Declassified,PC,2013.0,Shooter,Take-Two Interactive,0.05,80.0,8.0,19.99
+Cities in Motion,PC,2011.0,Simulation,Paradox Interactive,0.05,80.0,8.0,19.99
+Mortal Kombat X,PC,2015.0,Fighting,Warner Bros. Interactive Entertainment,0.05,80.0,8.0,19.99
+Street Fighter V,PC,2016.0,Fighting,Capcom,0.05,80.0,8.0,19.99
+Sherlock Holmes: Crimes & Punishments,PC,2014.0,Adventure,Focus Home Interactive,0.05,80.0,8.0,19.99
+Men of War: Assault Squad,PC,2011.0,Strategy,1C Company,0.05,8.0,8.0,19.99
+Mirror's Edge Catalyst,PC,2016.0,Platform,Electronic Arts,0.05,80.0,8.0,19.99
+LEGO The Hobbit,PC,2014.0,Action,Warner Bros. Interactive Entertainment,0.05,80.0,8.0,19.99
+Singularity,PC,2010.0,Shooter,Mastertronic,0.05,7.5,8.0,19.99
+Sesame Street: Cookie's Counting Carnival,PC,2010.0,Misc,Warner Bros. Interactive Entertainment,0.05,80.0,8.0,19.99
+Worms Reloaded,PC,2010.0,Strategy,Team17 Software,0.05,8.5,8.0,19.99
+Ship Simulator Extremes,PC,2010.0,Simulation,Paradox Interactive,0.05,80.0,8.0,19.99
+Payday 2,PC,2013.0,Shooter,505 Games,0.05,80.0,8.0,19.99
+Grand Ages: Medieval,PC,2015.0,Strategy,Kalypso Media,0.05,80.0,8.0,19.99
+Jonah Lomu Rugby Challenge,PC,2011.0,Sports,Home Entertainment Suppliers,0.05,80.0,8.0,19.99
+F1 2015,PC,2015.0,Racing,Codemasters,0.05,80.0,8.0,19.99
+FIFA Manager 12,PC,2011.0,Sports,Electronic Arts,0.05,80.0,8.0,19.99
+Sesame Street: Elmo's A-to-Zoo Adventure,PC,2010.0,Misc,Warner Bros. Interactive Entertainment,0.05,80.0,8.0,19.99
+Plants vs. Zombies: Garden Warfare 2,PC,2016.0,Shooter,Electronic Arts,0.05,80.0,8.0,19.99
+Jewel Master: Cradle Of Rome 2,PC,2011.0,Puzzle,Rising Star Games,0.04,80.0,8.0,19.99
+Resident Evil 6,PC,2012.0,Shooter,Capcom,0.04,80.0,8.0,19.99
+Split/Second,PC,2010.0,Racing,Disney Interactive Studios,0.04,80.0,8.0,19.99
+Jewel Quest 5: The Sleepless Star,PC,2011.0,Action,Astragon,0.04,80.0,8.0,19.99
+Life is Strange,PC,2016.0,Adventure,Square Enix,0.04,80.0,8.0,19.99
+Pro Evolution Soccer 2016,PC,2015.0,Sports,Konami Digital Entertainment,0.04,80.0,8.0,19.99
+NCIS,PC,2011.0,Adventure,Ubisoft,0.04,80.0,8.0,19.99
+Virtua Tennis 4,PC,2011.0,Sports,Sega,0.04,80.0,8.0,19.99
+Major League Baseball 2K12,PC,2012.0,Sports,Take-Two Interactive,0.04,80.0,8.0,19.99
+Lost Planet 3,PC,2013.0,Shooter,Capcom,0.04,80.0,8.0,19.99
+Men of War: Vietnam,PC,2011.0,Strategy,Unknown,0.04,7.2,8.0,19.99
+Off-Road Drive,PC,2011.0,Racing,1C Company,0.04,80.0,8.0,19.99
+Resident Evil: Operation Raccoon City,PC,2012.0,Action,Capcom,0.04,80.0,8.0,19.99
+Patrician IV,PC,2010.0,Strategy,Kalypso Media,0.04,6.7,8.0,19.99
+CSI: Fatal Conspiracy,PC,2010.0,Adventure,Ubisoft,0.04,80.0,8.0,19.99
+Resident Evil: Revelations,PC,2013.0,Action,Capcom,0.04,7.0,8.0,19.99
+Castlevania: Lords of Shadow 2,PC,2014.0,Action,Konami Digital Entertainment,0.04,80.0,8.0,19.99
+All Points Bulletin,PC,2010.0,Role-Playing,Electronic Arts,0.04,7.0,8.0,19.99
+The Sims 4: Spa Day,PC,2015.0,Simulation,Electronic Arts,0.04,80.0,8.0,19.99
+JASF: Jane's Advanced Strike Fighters,PC,2011.0,Simulation,Deep Silver,0.04,80.0,8.0,19.99
+LEGO Jurassic World,PC,2015.0,Action,Warner Bros. Interactive Entertainment,0.04,80.0,8.0,19.99
+Civilization Beyond Earth: Rising Tide,PC,2015.0,Strategy,Take-Two Interactive,0.04,80.0,8.0,19.99
+Train Simulator 2016,PC,2015.0,Simulation,Unknown,0.04,80.0,8.0,19.99
+APB Reloaded,PC,2011.0,Role-Playing,Iceberg Interactive,0.04,80.0,8.0,19.99
+Trine 2,PC,2011.0,Platform,Focus Home Interactive,0.04,80.0,8.0,19.99
+Worms: Ultimate Mayhem,PC,2011.0,Strategy,Unknown,0.04,80.0,8.0,19.99
+The Night of the Rabbit,PC,2013.0,Adventure,Daedalic Entertainment,0.04,80.0,8.0,19.99
+Alpha Protocol,PC,2010.0,Role-Playing,Sega,0.04,80.0,8.0,19.99
+Sins of a Solar Empire: Trinity,PC,2010.0,Strategy,Kalypso Media,0.04,80.0,8.0,19.99
+A Game of Thrones: Genesis,PC,2011.0,Strategy,Focus Home Interactive,0.04,4.9,8.0,19.99
+The Cursed Crusade,PC,2011.0,Action,DTP Entertainment,0.04,80.0,8.0,19.99
+Might & Magic X: Legacy,PC,2014.0,Role-Playing,Ubisoft,0.04,80.0,8.0,19.99
+Supreme Ruler: Cold War,PC,2011.0,Strategy,Paradox Interactive,0.03,80.0,8.0,19.99
+Apache: Air Assault,PC,2010.0,Simulation,Just Flight,0.03,80.0,8.0,19.99
+Sacra Terra: Angelic Night,PC,2011.0,Puzzle,Avanquest,0.03,80.0,8.0,19.99
+Prince of Persia: The Forgotten Sands,PC,2010.0,Action,Ubisoft,0.03,80.0,8.0,19.99
+Trials Fusion,PC,2014.0,Racing,Ubisoft,0.03,80.0,8.0,19.99
+The Binding of Isaac,PC,2012.0,Action,Unknown,0.03,8.3,8.0,19.99
+SBK 2011: FIM Superbike World Championship,PC,2011.0,Racing,Black Bean Games,0.03,80.0,8.0,19.99
+Living Legends: Frozen Beauty,PC,2014.0,Action,Big Fish Games,0.03,80.0,8.0,19.99
+Nancy Drew: Alibi In Ashes,PC,2011.0,Adventure,Her Interactive,0.03,80.0,8.0,19.99
+The Walking Dead: Season One,PC,2012.0,Adventure,Avanquest Software,0.03,80.0,8.0,19.99
+Hallowed Legends: Samhain,PC,2011.0,Adventure,Focus Home Interactive,0.03,80.0,8.0,19.99
+East India Company Collection,PC,2010.0,Misc,Paradox Interactive,0.03,80.0,8.0,19.99
+The Inner World,PC,2013.0,Adventure,Headup Games,0.03,80.0,8.0,19.99
+Super Meat Boy: Ultra Edition!,PC,2011.0,Platform,Unknown,0.03,80.0,8.0,19.99
+Hearts of Iron IV,PC,2016.0,Strategy,Paradox Interactive,0.03,80.0,8.0,19.99
+Take On Helicopters,PC,2011.0,Simulation,Unknown,0.03,80.0,8.0,19.99
+Shaun White Skateboarding,PC,2010.0,Sports,Ubisoft,0.03,80.0,8.0,19.99
+NBA 2K13,PC,2012.0,Sports,Take-Two Interactive,0.03,9.1,8.0,19.99
+Transformers: Devastation,PC,2015.0,Action,Activision,0.03,80.0,8.0,19.99
+Lords of the Fallen,PC,2014.0,Role-Playing,Square Enix,0.03,80.0,8.0,19.99
+Casino Chaos With Las Vegas Players Collection,PC,2011.0,Misc,THQ,0.03,80.0,8.0,19.99
+Doom 3 BFG Edition,PC,2012.0,Shooter,Bethesda Softworks,0.03,80.0,8.0,19.99
+Star Wars: The Force Unleashed II,PC,2010.0,Action,LucasArts,0.03,6.2,8.0,19.99
+Need for Speed (2015),PC,2016.0,Racing,Electronic Arts,0.03,80.0,8.0,19.99
+Commander: Conquest of the Americas,PC,2010.0,Strategy,Paradox Interactive,0.03,80.0,8.0,19.99
+Pro Cycling Manager 2016,PC,2016.0,Sports,Focus Home Interactive,0.03,80.0,8.0,19.99
+The Great Mystery Hidden Object Package 5,PC,2015.0,Adventure,Rondomedia,0.03,80.0,8.0,19.99
+Stellaris,PC,2016.0,Strategy,Paradox Interactive,0.03,80.0,8.0,19.99
+Mystery Trackers: The Void,PC,2011.0,Puzzle,Focus Home Interactive,0.03,80.0,8.0,19.99
+Botanicula,PC,2012.0,Adventure,Daedalic Entertainment,0.03,80.0,8.0,19.99
+Age of Conan: Rise of the Godslayer,PC,2010.0,Role-Playing,Funcom,0.03,7.9,8.0,19.99
+Ride,PC,2015.0,Racing,Milestone S.r.l.,0.03,80.0,8.0,19.99
+Schlag den Raab,PC,2010.0,Misc,Namco Bandai Games,0.03,80.0,8.0,19.99
+UK Truck Simulator,PC,2010.0,Simulation,,0.03,80.0,8.0,19.99
+Magicka,PC,2011.0,Role-Playing,Paradox Interactive,0.03,7.6,8.0,19.99
+Star Trek: The Game,PC,2013.0,Action,Namco Bandai Games,0.03,80.0,8.0,19.99
+King Arthur II,PC,2011.0,Strategy,Paradox Interactive,0.03,80.0,8.0,19.99
+DiRT Rally,PC,2016.0,Racing,Codemasters,0.03,80.0,8.0,19.99
+GRID Autosport,PC,2014.0,Racing,Codemasters,0.03,80.0,8.0,19.99
+Divinity II: Flames of Vengeance,PC,2010.0,Role-Playing,DTP Entertainment,0.03,80.0,8.0,19.99
+Air Conflicts: Secret Wars,PC,2011.0,Simulation,bitComposer Games,0.03,80.0,8.0,19.99
+Lost Planet 2,PC,2010.0,Shooter,Capcom,0.03,80.0,8.0,19.99
+Captain Morgane and the Golden Turtle,PC,2012.0,Adventure,Reef Entertainment,0.03,80.0,8.0,19.99
+Magicka Collection,PC,2011.0,Adventure,Unknown,0.03,80.0,8.0,19.99
+LEGO Pirates of the Caribbean: The Video Game,PC,2011.0,Action,Disney Interactive Studios,0.03,80.0,8.0,19.99
+Puppet Show 3: Lost Town,PC,2011.0,Puzzle,Focus Home Interactive,0.02,80.0,8.0,19.99
+LEGO Harry Potter: Years 1-4,PC,2010.0,Action,Warner Bros. Interactive Entertainment,0.02,8.2,8.0,19.99
+Bus Simulator 16,PC,2016.0,Simulation,Astragon,0.02,80.0,8.0,19.99
+Star Trek Online,PC,2010.0,Role-Playing,Atari,0.02,5.9,8.0,19.99
+Tropico 4: Modern Times,PC,2012.0,Strategy,Kalypso Media,0.02,80.0,8.0,19.99
+Fishdom 2 Deluxe,PC,2010.0,Puzzle,Rondomedia,0.02,80.0,8.0,19.99
+Cities XL 2011,PC,2010.0,Simulation,Focus Home Interactive,0.02,80.0,8.0,19.99
+Street Fighter X Tekken,PC,2012.0,Fighting,Capcom,0.02,80.0,8.0,19.99
+F1 Race Stars,PC,2012.0,Racing,Codemasters,0.02,80.0,8.0,19.99
+Escape the Emerald Star,PC,2011.0,Puzzle,PopCap Games,0.02,80.0,8.0,19.99
+X3: Terran War Pack,PC,2012.0,Misc,Deep Silver,0.02,80.0,8.0,19.99
+Serious Sam HD: Gold Edition,PC,2010.0,Shooter,Devolver Digital,0.02,80.0,8.0,19.99
+Plants vs. Zombies: Garden Warfare,PC,2014.0,Shooter,Electronic Arts,0.02,80.0,8.0,19.99
+Sacred 3,PC,2014.0,Role-Playing,Deep Silver,0.02,80.0,8.0,19.99
+Rocket League,PC,2016.0,Sports,505 Games,0.02,9.2,8.0,19.99
+Cities in Motion Collection,PC,2011.0,Simulation,Unknown,0.02,80.0,8.0,19.99
+Tale of a Hero,PC,2010.0,Adventure,Daedalic,0.02,80.0,8.0,19.99
+Dungeon Defenders,PC,2011.0,Role-Playing,Unknown,0.02,8.3,8.0,19.99
+F1 2016 (Codemasters),PC,2016.0,Racing,Codemasters,0.02,80.0,8.0,19.99
+Rugby League Team Manager 2015,PC,2015.0,Action,Alternative Software,0.02,80.0,8.0,19.99
+Homefront: The Revolution,PC,2016.0,Shooter,Deep Silver,0.02,80.0,8.0,19.99
+Airport Simulator,PC,2011.0,Simulation,Unknown,0.02,80.0,8.0,19.99
+Oil Rush,PC,2012.0,Strategy,Iceberg Interactive,0.02,80.0,8.0,19.99
+Demolition Company: Gold Edition,PC,2011.0,Simulation,,0.02,80.0,8.0,19.99
+Ridge Racer Unbounded,PC,2012.0,Racing,Namco Bandai Games,0.02,80.0,8.0,19.99
+Deus Ex: Mankind Divided,PC,2016.0,Role-Playing,Square Enix,0.02,80.0,8.0,19.99
+RollerCoaster Tycoon World,PC,2016.0,Simulation,Atari,0.02,80.0,8.0,19.99
+Trapped Dead,PC,2011.0,Strategy,Iceberg Interactive,0.02,4.0,8.0,19.99
+Mount & Blade: Warband,PC,2010.0,Role-Playing,Paradox Interactive,0.02,80.0,8.0,19.99
+Dark Tales: Edgar Allan Poe's The Premature Burial,PC,2012.0,Puzzle,Focus Multimedia,0.02,80.0,8.0,19.99
+Resident Evil Zero,PC,2016.0,Action,Capcom,0.02,80.0,8.0,19.99
+Mount & Blade Collection,PC,2012.0,Role-Playing,Paradox Interactive,0.02,80.0,8.0,19.99
+Atlantic Quest,PC,2011.0,Puzzle,Avanquest,0.02,80.0,8.0,19.99
+Agatha Christie: The ABC Murders,PC,2016.0,Adventure,Microids,0.02,80.0,8.0,19.99
+Spirits and Demons: 5 Game Pack,PC,2015.0,Misc,Focus Multimedia,0.02,80.0,8.0,19.99
+X-Plane 10 Global,PC,2013.0,Simulation,Aerosoft,0.02,80.0,8.0,19.99
+WRC 2: FIA World Rally Championship,PC,2011.0,Racing,Ubisoft,0.02,80.0,8.0,19.99
+Blood Bowl: Legendary Edition,PC,2010.0,Sports,Focus Home Interactive,0.02,80.0,8.0,19.99
+The Crew: Wild Run,PC,2015.0,Action,Ubisoft,0.02,80.0,8.0,19.99
+7 Roses: A Darkness Rises,PC,2015.0,Misc,Avanquest Software,0.02,80.0,8.0,19.99
+James Bond 007: Blood Stone,PC,2010.0,Shooter,Activision,0.02,6.2,8.0,19.99
+Heavy Fire: Afghanistan,PC,2011.0,Shooter,Mastiff,0.02,80.0,8.0,19.99
+Lara Croft and the Temple of Osiris,PC,2014.0,Action,Square Enix,0.02,80.0,8.0,19.99
+Final Fantasy XIV: Heavensward,PC,2015.0,Action,Square Enix,0.02,80.0,8.0,19.99
+Bejeweled Blitz,PC,2010.0,Puzzle,Mastertronic,0.02,80.0,8.0,19.99
+Song of the Deep,PC,2016.0,Action,Insomniac Games,0.02,80.0,8.0,19.99
+Dungeons - The Dark Lord,PC,2011.0,Strategy,Kalypso Media,0.02,80.0,8.0,19.99
+Disciples III: Renaissance,PC,2010.0,Strategy,Kalypso Media,0.02,80.0,8.0,19.99
+Revolution: 25th Anniversary Collection,PC,2016.0,Adventure,Koch Media,0.02,80.0,8.0,19.99
+Elven Legacy Collection,PC,2010.0,Strategy,Paradox Interactive,0.02,80.0,8.0,19.99
+Divinity: Original Sin,PC,2014.0,Role-Playing,Focus Home Interactive,0.02,80.0,8.0,19.99
+Dark Void,PC,2010.0,Action,Capcom,0.02,6.1,8.0,19.99
+Achtung Panzer: Kharkov 1943,PC,2010.0,Strategy,Mamba Games,0.02,80.0,8.0,19.99
+Command & Conquer 4: Tiberian Twilight,PC,2010.0,Strategy,Electronic Arts,0.02,6.6,8.0,19.99
+The Haunted: Hell's Reach,PC,2011.0,Shooter,Visco,0.02,5.3,8.0,19.99
+Majesty 2 Collection,PC,2011.0,Strategy,Paradox Interactive,0.02,80.0,8.0,19.99
+DuckTales: Remastered,PC,2013.0,Action,Capcom,0.02,80.0,8.0,19.99
+Contrast,PC,2013.0,Platform,Focus Home Interactive,0.02,80.0,8.0,19.99
+The Sims 4: Luxury Party Stuff,PC,2015.0,Simulation,Electronic Arts,0.02,80.0,8.0,19.99
+Pillars of Eternity,PC,2014.0,Role-Playing,Paradox Interactive,0.02,80.0,8.0,19.99
+Pillars of Eternity,PC,2014.0,Role-Playing,Paradox Interactive,0.02,80.0,8.0,19.99
+Sengoku,PC,2011.0,Strategy,Paradox Interactive,0.02,80.0,8.0,19.99
+IGT Slots: Lucky Larry's Lobstermania,PC,2011.0,Simulation,Masque Publishing,0.02,80.0,8.0,19.99
+Rise of Flight: Iron Cross Edition,PC,2010.0,Simulation,Aerosoft,0.01,80.0,8.0,19.99
+Coronation Street: The Mystery of the Missing Hotpot Recipe,PC,2011.0,Adventure,Avanquest,0.01,80.0,8.0,19.99
+Battle Worlds: Kronos,PC,2016.0,Strategy,Nordic Games,0.01,80.0,8.0,19.99
+Digger Simulator,PC,2011.0,Simulation,Excalibur Publishing,0.01,80.0,8.0,19.99
+Paranormal Pursuit: The Gifted One,PC,2015.0,Action,Alawar Entertainment,0.01,80.0,8.0,19.99
+Voodoo Chronicles: First Sign,PC,2011.0,Adventure,ValuSoft,0.01,80.0,8.0,19.99
+BlazBlue: Calamity Trigger,PC,2010.0,Fighting,PQube,0.01,80.0,8.0,19.99
+Mystery Legends: Beauty and the Beast,PC,2012.0,Puzzle,Focus Multimedia,0.01,80.0,8.0,19.99
+Dark Parables: The Exiled Prince,PC,2011.0,Puzzle,Unknown,0.01,80.0,8.0,19.99
+Sonic & All-Stars Racing Transformed,PC,2013.0,Racing,Sega,0.01,80.0,8.0,19.99
+Valentino Rossi: The Game,PC,2016.0,Racing,Namco Bandai Games,0.01,80.0,8.0,19.99
+Farming Simulator 15 Expansion Pack,PC,2015.0,Action,Focus Home Interactive,0.01,80.0,8.0,19.99
+War for the Overworld,PC,2015.0,Strategy,Unknown,0.01,80.0,8.0,19.99
+The Train Giant,PC,2012.0,Strategy,Ascaron Entertainment,0.01,80.0,8.0,19.99
+The Train Giant,PC,2012.0,Strategy,Ascaron Entertainment,0.01,80.0,8.0,19.99
+MXGP 2,PC,2016.0,Racing,Milestone S.r.l.,0.01,80.0,8.0,19.99
+Cities: Skylines Snowfall,PC,2016.0,Simulation,Paradox Development,0.01,80.0,8.0,19.99
+Dungeons & Dragons: Neverwinter Nights - Complete,PC,2011.0,Misc,Atari,0.01,80.0,8.0,19.99
+Act of Aggression,PC,2015.0,Strategy,Focus Home Interactive,0.01,80.0,8.0,19.99
+Fallout Anthology,PC,2015.0,Action,Bethesda Softworks,0.01,80.0,8.0,19.99
+Tropico 3: Gold Edition,PC,2010.0,Strategy,Kalypso Media,0.01,80.0,8.0,19.99
+TrackMania Turbo,PC,2016.0,Action,Ubisoft,0.01,80.0,8.0,19.99
+The Technomancer,PC,2016.0,Role-Playing,Focus Home Interactive,0.01,80.0,8.0,19.99
+The Amazing Spider-Man 2 (2014),PC,2014.0,Action,Activision,0.01,80.0,8.0,19.99
+Rugby World Cup 2015,PC,2015.0,Sports,Ubisoft,0.01,80.0,8.0,19.99
+Total War Attila: Tyrants & Kings,PC,2016.0,Strategy,Koch Media,0.01,80.0,8.0,19.99
+"Transformers: War for Cybertron (XBox 360, PS3, & PC Versions)",PC,2010.0,Shooter,Activision,0.01,80.0,8.0,19.99
+STORM: Frontline Nation,PC,2011.0,Strategy,Unknown,0.01,7.0,8.0,19.99
+Patrician IV: Gold Edition,PC,2011.0,Misc,Kalypso Media,0.01,80.0,8.0,19.99
+Transformers: Fall of Cybertron,PC,2012.0,Action,Activision,0.01,80.0,8.0,19.99
+Driving Simulator 2011,PC,2011.0,Racing,,0.01,80.0,8.0,19.99
+The Treasures of Mystery Island 3 Pack - Save Mystery Island!,PC,2011.0,Puzzle,Unknown,0.01,80.0,8.0,19.99
+Codename: Panzers Complete Collection,PC,2016.0,Strategy,Nordic Games,0.01,80.0,8.0,19.99
+End of Nations,PC,2012.0,Strategy,Trion Worlds,0.01,80.0,8.0,19.99
+Breach,PC,2011.0,Shooter,Destineer,0.01,6.5,8.0,19.99

@@ -1,0 +1,51 @@
+software,categoria_ferramenta,tipo_licenca,preco_unitario_mensal,qnt_licencas,gasto_total_mensal
+Substance 3D Painter,3D & Texturização,Assinatura Mensal,160.00,4,640.00
+Autodesk Maya,3D & Animação,Anual / Mensalizado,1100.00,2,2200.00
+ZBrush,Sculpting 3D,Anual / Mensalizado,195.00,2,390.00
+Unreal Engine (Enterprise),Game Engine,Gratuito / Royalty,0.00,10,0.00
+Unity Pro,Game Engine,Assinatura Mensal,950.00,3,2850.00
+Blender,3D Modeling,Open Source,0.00,12,0.00
+JetBrains Rider,IDE / Code,Assinatura Mensal,80.00,4,320.00
+Jira Software,Gestão de Projetos,Por Usuário,40.00,10,400.00
+Confluence,Documentação / Wiki,Por Usuário,25.00,10,250.00
+Notion Teams,Gestão & Wiki,Por Usuário,30.00,8,240.00
+FMOD Studio,Audio Middleware,Licença Indie,0.00,2,0.00
+Wwise,Audio Middleware,Licença Indie,0.00,2,0.00
+Adobe Creative Cloud,Design & 2D,Assinatura Mensal,280.00,3,840.00
+Marvelous Designer,Vestuário 3D,Assinatura Mensal,190.00,1,190.00
+SideFX Houdini Indie,VFX & Procedural,Anual / Mensalizado,140.00,1,140.00
+Marmoset Toolbag,Baking & Render,Licença Perpétua,90.00,2,180.00
+Anchorpoint / Git LFS,Controle de Versão,Mensal,60.00,6,360.00
+Perforce Helix Core,Controle de Versão,Até 5 Grátis / Cloud,120.00,1,120.00
+Slack Pro,Comunicação,Por Usuário,35.00,10,350.00
+Zoom Pro,Reuniões Online,Mensal,75.00,2,150.00
+Google Workspace,E-mail & Cloud,Por Usuário,45.00,10,450.00
+AWS Server Build / CI,Infraestrutura,Uso Consumo,350.00,1,350.00
+SpeedTree Cinema/Indie,Vegetação 3D,Mensal,95.00,1,95.00
+World Creator,Terrenos 3D,Perpétua / Anual,85.00,1,85.00
+Quixel Megascans,Biblioteca 3D,Incluso Unreal,0.00,10,0.00
+Spine 2D Pro,Animação 2D,Perpétua,120.00,1,120.00
+Aseprite,Pixel Art,Perpétua,10.00,2,20.00
+Substance 3D Designer,Materiais Procedurais,Mensal,160.00,2,320.00
+Substance 3D Sampler,Captura de Texturas,Mensal,80.00,2,160.00
+RizomUV,UV Unwrapping,Mensal,45.00,2,90.00
+Cascadeur,Animação Física AI,Mensal,110.00,1,110.00
+Plastic SCM / Unity VCS,Controle de Versão,Mensal,70.00,4,280.00
+Miro Team,Whiteboard Online,Por Usuário,28.00,5,140.00
+Figma Professional,UI/UX Design,Por Usuário,60.00,2,120.00
+ClickUp,Gestão de Tarefas,Por Usuário,25.00,5,125.00
+Discord Nitro Team,Comunicação,Mensal,30.00,4,120.00
+Dropbox for Business,Armazenamento,Mensal,110.00,2,220.00
+Bitbucket Cloud,Repositório Git,Mensal,40.00,1,40.00
+RenderFarm Cloud,Renderização,Consumo,200.00,1,200.00
+ChatGPT Plus Team,IA Assistente,Por Usuário,120.00,3,360.00
+Midjourney Pro,Concept & Arte IA,Mensal,180.00,1,180.00
+Zapier Professional,Automação,Mensal,95.00,1,95.00
+1Password Teams,Segurança,Por Usuário,20.00,10,200.00
+Synthesia,Vídeo de Onboarding,Mensal,130.00,1,130.00
+SonarQube Developer,Qualidade de Código,Mensal,150.00,1,150.00
+Krita,Pintura Digital,Open Source,0.00,4,0.00
+Visual Studio Community,IDE C++ / C#,Gratuito,0.00,5,0.00
+Audacity,Edição de Áudio,Open Source,0.00,2,0.00
+OBS Studio,Gravação & Playtest,Open Source,0.00,5,0.00
+PureRef,Moodboards,Gratuito,0.00,10,0.00
