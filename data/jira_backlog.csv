@@ -1,0 +1,151 @@
+id_task,id_profissional,software,categoria,subcategoria,atividade,dificuldade,story_points,tempo_estimado_hr,tempo_real_hr,horas_refacao,valor_hora,custo_total_task,status_jira,projeto,milestone,sprint
+TASK-101,1035,Blender,Environment,Textura PBR,Modelagem Low-Poly de Caixas,Alta,8,24,24,0,90.0,2160.0,In Progress,Vampire's Legacy,Alpha,Sprint 12
+TASK-102,1036,Substance 3D Painter,Characters,Rigging,Texturização PBR de Herança Vintage,Alta,8,30,33,3,70.0,2310.0,To Do,Cyberpunk: Neo Neon,Prototype,Sprint 12
+TASK-103,1047,Blender,Art Direction,Concept de Cenário,Blocagem de Kit Modular de Mina,Alta,5,19,25,6,55.0,1375.0,Done,Shadows of Eldoria,Alpha,Sprint 12
+TASK-104,1006,Unreal Engine,Environment,Shaders & VFX,Shader de Lama Blend via Vertex Color,Média,5,19,23,4,110.0,2530.0,To Do,Vampire's Legacy,Gold Master,Sprint 4
+TASK-105,1024,Unreal Engine,Gameplay,Sistemas/UI,Sistema de Inventário e Peso,Alta,3,10,13,3,120.0,1560.0,To Do,Aetheria: Astral Chronicles,Vertical Slice,Sprint 14
+TASK-106,1043,Unreal Engine,Art Direction,Concept de Cenário,Controller de Pulo e Hookshot,Alta,8,24,28,4,60.0,1680.0,Done,Dungeon Crawlers Zero,Vertical Slice,Sprint 14
+TASK-107,1037,Unity,Level Design,Layout de Fases,HUD de Vida e Stamina,Média,5,18,21,3,60.0,1260.0,Done,Shadows of Eldoria,Prototype,Sprint 11
+TASK-108,1044,Autodesk Maya,Audio,SFX & FMOD,Rigging Facial de Chefão,Alta,8,31,34,3,75.0,2550.0,Done,Shadows of Eldoria,Beta,Sprint 10
+TASK-109,1026,Autodesk Maya,Management,Gestão de Sprints,Ciclo de Caminhada e Ataque,Alta,8,33,33,0,120.0,3960.0,Done,Vampire's Legacy,Prototype,Sprint 7
+TASK-110,1024,Photoshop,Gameplay,Sistemas/UI,Concept Art da Entrada da Caverna,Alta,8,25,28,3,120.0,3360.0,To Do,Chronos: Before the Ashes,Beta,Sprint 12
+TASK-111,1040,Unreal Engine,Management,Gestão de Sprints,Level Building da Arena Boss,Média,5,19,19,0,100.0,1900.0,In Progress,Aetheria: Astral Chronicles,Vertical Slice,Sprint 9
+TASK-112,1009,FMOD Studio,Level Design,Layout de Fases,Implementação de Passos em Superfícies,Média,5,20,22,2,85.0,1870.0,Done,Vampire's Legacy,Prototype,Sprint 7
+TASK-113,1040,Jira Software,Management,Gestão de Sprints,Bateria de Testes de Colisão,Alta,8,30,32,2,100.0,3200.0,To Do,Aetheria: Astral Chronicles,Gold Master,Sprint 14
+TASK-114,1004,ZBrush,Gameplay,Sistemas/UI,Modelagem de Veículo Retro,Média,5,18,20,2,105.0,2100.0,Done,Aetheria: Astral Chronicles,Alpha,Sprint 1
+TASK-115,1046,Marmoset Toolbag,Art Direction,Concept de Cenário,Bakes de Normal Map & Occlusion,Média,5,20,22,2,60.0,1320.0,In Progress,Dungeon Crawlers Zero,Beta,Sprint 1
+TASK-116,1025,Blender,Audio,SFX & FMOD,Modelagem Low-Poly de Caixas,Alta,8,29,35,6,65.0,2275.0,Done,Shadows of Eldoria,Alpha,Sprint 9
+TASK-117,1027,Substance 3D Painter,Characters,Animação 3D,Texturização PBR de Herança Vintage,Média,3,12,15,3,75.0,1125.0,In Progress,Cyberpunk: Neo Neon,Alpha,Sprint 11
+TASK-118,1019,Blender,Gameplay,Mecânicas,Blocagem de Kit Modular de Mina,Média,3,15,15,0,105.0,1575.0,To Do,Dungeon Crawlers Zero,Prototype,Sprint 14
+TASK-119,1042,Unreal Engine,Environment,Shaders & VFX,Shader de Lama Blend via Vertex Color,Alta,8,25,28,3,155.0,4340.0,Done,Dungeon Crawlers Zero,Alpha,Sprint 9
+TASK-120,1019,Unreal Engine,Gameplay,Mecânicas,Sistema de Inventário e Peso,Alta,5,21,23,2,105.0,2415.0,In Progress,Aetheria: Astral Chronicles,Gold Master,Sprint 4
+TASK-121,1009,Unreal Engine,Level Design,Layout de Fases,Controller de Pulo e Hookshot,Baixa,2,6,6,0,85.0,510.0,Done,Starlight Odyssey,Alpha,Sprint 13
+TASK-122,1040,Unity,Management,Gestão de Sprints,HUD de Vida e Stamina,Média,5,18,21,3,100.0,2100.0,To Do,Shadows of Eldoria,Prototype,Sprint 9
+TASK-123,1030,Autodesk Maya,Characters,Rigging,Rigging Facial de Chefão,Alta,2,7,9,2,125.0,1125.0,In Progress,Chronos: Before the Ashes,Gold Master,Sprint 3
+TASK-124,1050,Autodesk Maya,Environment,Props,Ciclo de Caminhada e Ataque,Alta,5,22,25,3,65.0,1625.0,Done,Dungeon Crawlers Zero,Vertical Slice,Sprint 7
+TASK-125,1044,Photoshop,Audio,SFX & FMOD,Concept Art da Entrada da Caverna,Média,3,12,12,0,75.0,900.0,Done,Cyberpunk: Neo Neon,Alpha,Sprint 6
+TASK-126,1026,Unreal Engine,Management,Gestão de Sprints,Level Building da Arena Boss,Alta,8,29,29,0,120.0,3480.0,Done,Starlight Odyssey,Prototype,Sprint 8
+TASK-127,1018,FMOD Studio,Environment,Cenário Modular,Implementação de Passos em Superfícies,Alta,2,7,9,2,75.0,675.0,Done,Starlight Odyssey,Vertical Slice,Sprint 11
+TASK-128,1014,Jira Software,Art Direction,Concept de Cenário,Bateria de Testes de Colisão,Média,5,16,16,0,50.0,800.0,Done,Chronos: Before the Ashes,Vertical Slice,Sprint 9
+TASK-129,1011,ZBrush,Art Direction,Concept de Cenário,Modelagem de Veículo Retro,Alta,8,27,30,3,65.0,1950.0,In Progress,Dungeon Crawlers Zero,Beta,Sprint 14
+TASK-130,1049,Marmoset Toolbag,Characters,Animação 3D,Bakes de Normal Map & Occlusion,Alta,8,30,32,2,85.0,2720.0,In Progress,Cyberpunk: Neo Neon,Gold Master,Sprint 5
+TASK-131,1050,Blender,Environment,Props,Modelagem Low-Poly de Caixas,Média,5,18,18,0,65.0,1170.0,Done,Shadows of Eldoria,Alpha,Sprint 1
+TASK-132,1048,Substance 3D Painter,Management,Gestão de Sprints,Texturização PBR de Herança Vintage,Média,3,15,15,0,120.0,1800.0,In Progress,Hollow Knight: Silksong,Prototype,Sprint 3
+TASK-133,1001,Blender,Characters,Rigging,Blocagem de Kit Modular de Mina,Alta,8,23,26,3,90.0,2340.0,In Progress,Cyberpunk: Neo Neon,Beta,Sprint 10
+TASK-134,1013,Unreal Engine,Art Direction,Concept de Cenário,Shader de Lama Blend via Vertex Color,Baixa,2,6,6,0,140.0,840.0,Done,Chronos: Before the Ashes,Gold Master,Sprint 12
+TASK-135,1040,Unreal Engine,Management,Gestão de Sprints,Sistema de Inventário e Peso,Alta,8,33,33,0,100.0,3300.0,Done,Starlight Odyssey,Beta,Sprint 8
+TASK-136,1025,Unreal Engine,Audio,SFX & FMOD,Controller de Pulo e Hookshot,Alta,8,33,36,3,65.0,2340.0,To Do,Shadows of Eldoria,Gold Master,Sprint 15
+TASK-137,1011,Unity,Art Direction,Concept de Cenário,HUD de Vida e Stamina,Média,3,14,14,0,65.0,910.0,Done,Cyberpunk: Neo Neon,Gold Master,Sprint 11
+TASK-138,1041,Autodesk Maya,Management,Gestão de Sprints,Rigging Facial de Chefão,Alta,8,30,32,2,85.0,2720.0,To Do,Hollow Knight: Silksong,Alpha,Sprint 6
+TASK-139,1005,Autodesk Maya,Environment,Shaders & VFX,Ciclo de Caminhada e Ataque,Média,3,12,12,0,100.0,1200.0,Done,Hollow Knight: Silksong,Gold Master,Sprint 8
+TASK-140,1027,Photoshop,Characters,Animação 3D,Concept Art da Entrada da Caverna,Alta,8,28,30,2,75.0,2250.0,Done,Aetheria: Astral Chronicles,Beta,Sprint 9
+TASK-141,1036,Unreal Engine,Characters,Rigging,Level Building da Arena Boss,Alta,8,33,33,0,70.0,2310.0,In Progress,Aetheria: Astral Chronicles,Gold Master,Sprint 4
+TASK-142,1011,FMOD Studio,Art Direction,Concept de Cenário,Implementação de Passos em Superfícies,Alta,8,25,28,3,65.0,1820.0,Done,Vampire's Legacy,Alpha,Sprint 1
+TASK-143,1017,Jira Software,Environment,Props,Bateria de Testes de Colisão,Baixa,2,7,7,0,95.0,665.0,In Progress,Chronos: Before the Ashes,Alpha,Sprint 14
+TASK-144,1023,ZBrush,Characters,Animação 3D,Modelagem de Veículo Retro,Média,5,16,19,3,125.0,2375.0,Done,Dungeon Crawlers Zero,Beta,Sprint 1
+TASK-145,1024,Marmoset Toolbag,Gameplay,Sistemas/UI,Bakes de Normal Map & Occlusion,Alta,8,23,26,3,120.0,3120.0,Done,Cyberpunk: Neo Neon,Vertical Slice,Sprint 10
+TASK-146,1027,Blender,Characters,Animação 3D,Modelagem Low-Poly de Caixas,Alta,8,30,33,3,75.0,2475.0,Done,Cyberpunk: Neo Neon,Vertical Slice,Sprint 4
+TASK-147,1013,Substance 3D Painter,Art Direction,Concept de Cenário,Texturização PBR de Herança Vintage,Alta,2,7,10,3,140.0,1400.0,Done,Dungeon Crawlers Zero,Gold Master,Sprint 12
+TASK-148,1043,Blender,Art Direction,Concept de Cenário,Blocagem de Kit Modular de Mina,Baixa,2,7,7,0,60.0,420.0,To Do,Vampire's Legacy,Prototype,Sprint 14
+TASK-149,1045,Unreal Engine,QA,Testes Funcionais,Shader de Lama Blend via Vertex Color,Média,5,17,20,3,45.0,900.0,Done,Starlight Odyssey,Gold Master,Sprint 7
+TASK-150,1009,Unreal Engine,Level Design,Layout de Fases,Sistema de Inventário e Peso,Média,5,19,19,0,85.0,1615.0,In Progress,Starlight Odyssey,Beta,Sprint 2
+TASK-151,1036,Blender,Level Design,Layout de Fases,Level Building,Alta,8,23,25,2,70.0,1750.0,Done,Vampire's Legacy,Prototype,Sprint 2
+TASK-152,1034,FMOD Studio,Gameplay,Sistemas/UI,HUD de Vida e Stamina,Alta,8,25,25,0,55.0,1375.0,Done,Starlight Odyssey,Prototype,Sprint 1
+TASK-153,1010,Unreal Engine,Audio,SFX & FMOD,Implementação de Áudio,Alta,8,29,29,0,85.0,2465.0,Done,Aetheria: Astral Chronicles,Vertical Slice,Sprint 15
+TASK-154,1003,Unity,Environment,Shaders & VFX,Shader de Blend,Alta,5,21,26,5,55.0,1430.0,In Progress,Cyberpunk: Neo Neon,Alpha,Sprint 1
+TASK-155,1011,Substance 3D Painter,Audio,SFX & FMOD,Implementação de Áudio,Alta,8,24,25,1,65.0,1625.0,To Do,Vampire's Legacy,Gold Master,Sprint 4
+TASK-156,1022,FMOD Studio,Level Design,Layout de Fases,Level Building,Alta,8,23,23,0,85.0,1955.0,Done,Cyberpunk: Neo Neon,Gold Master,Sprint 12
+TASK-157,1001,Substance 3D Painter,Level Design,Layout de Fases,Level Building,Alta,5,22,22,0,90.0,1980.0,Done,Dungeon Crawlers Zero,Gold Master,Sprint 8
+TASK-158,1015,FMOD Studio,Gameplay,Sistemas/UI,HUD de Vida e Stamina,Alta,8,26,31,5,65.0,2015.0,To Do,Hollow Knight: Silksong,Alpha,Sprint 4
+TASK-159,1025,Unity,Gameplay,Sistemas/UI,HUD de Vida e Stamina,Alta,8,38,40,2,65.0,2600.0,In Progress,Aetheria: Astral Chronicles,Prototype,Sprint 11
+TASK-160,1011,Unreal Engine,Environment,Shaders & VFX,Shader de Blend,Média,5,17,19,2,65.0,1235.0,To Do,Shadows of Eldoria,Alpha,Sprint 9
+TASK-161,1003,Unity,Environment,Shaders & VFX,Shader de Blend,Alta,8,28,28,0,55.0,1540.0,Done,Aetheria: Astral Chronicles,Beta,Sprint 8
+TASK-162,1030,Unity,Environment,Shaders & VFX,Shader de Blend,Alta,2,8,11,3,125.0,1375.0,In Progress,Vampire's Legacy,Beta,Sprint 13
+TASK-163,1014,ZBrush,Characters,Rigging,Rigging Facial,Média,3,11,11,0,50.0,550.0,In Progress,Shadows of Eldoria,Prototype,Sprint 7
+TASK-164,1045,ZBrush,Environment,Cenário Modular,Blocagem de Kit Modular,Baixa,2,7,7,0,45.0,315.0,Done,Hollow Knight: Silksong,Prototype,Sprint 1
+TASK-165,1048,Substance 3D Painter,Characters,Animação 3D,Ciclo de Caminhada,Média,5,19,19,0,120.0,2280.0,Done,Vampire's Legacy,Alpha,Sprint 6
+TASK-166,1048,FMOD Studio,Audio,SFX & FMOD,Implementação de Áudio,Média,3,11,12,1,120.0,1440.0,Done,Chronos: Before the Ashes,Alpha,Sprint 12
+TASK-167,1041,Substance 3D Painter,Characters,Rigging,Rigging Facial,Média,3,12,12,0,85.0,1020.0,In Progress,Cyberpunk: Neo Neon,Prototype,Sprint 11
+TASK-168,1010,Unreal Engine,Characters,Animação 3D,Ciclo de Caminhada,Alta,8,37,37,0,85.0,3145.0,Done,Hollow Knight: Silksong,Vertical Slice,Sprint 12
+TASK-169,1006,Unreal Engine,Environment,Cenário Modular,Blocagem de Kit Modular,Alta,8,28,28,0,110.0,3080.0,To Do,Cyberpunk: Neo Neon,Prototype,Sprint 2
+TASK-170,1019,Substance 3D Painter,Art Direction,Concept de Cenário,Concept Art de Ambiente,Média,5,17,18,1,105.0,1890.0,To Do,Starlight Odyssey,Vertical Slice,Sprint 13
+TASK-171,1027,Unreal Engine,Characters,Animação 3D,Ciclo de Caminhada,Baixa,2,8,8,0,75.0,600.0,Done,Chronos: Before the Ashes,Vertical Slice,Sprint 12
+TASK-172,1001,Blender,Characters,Animação 3D,Ciclo de Caminhada,Média,5,19,20,1,90.0,1800.0,Done,Chronos: Before the Ashes,Vertical Slice,Sprint 3
+TASK-173,1031,Blender,Gameplay,Sistemas/UI,HUD de Vida e Stamina,Alta,2,6,9,3,70.0,630.0,Done,Hollow Knight: Silksong,Prototype,Sprint 9
+TASK-174,1018,Photoshop,Environment,Shaders & VFX,Shader de Blend,Média,5,18,18,0,75.0,1350.0,Done,Chronos: Before the Ashes,Prototype,Sprint 4
+TASK-175,1022,Unreal Engine,Art Direction,Concept de Cenário,Concept Art de Ambiente,Alta,5,21,23,2,85.0,1955.0,To Do,Shadows of Eldoria,Alpha,Sprint 9
+TASK-176,1001,Autodesk Maya,Environment,Props,Modelagem Low-Poly de Caixas,Alta,8,27,29,2,90.0,2610.0,In Progress,Chronos: Before the Ashes,Vertical Slice,Sprint 8
+TASK-177,1010,Unreal Engine,Gameplay,Sistemas/UI,HUD de Vida e Stamina,Baixa,2,6,6,0,85.0,510.0,In Progress,Cyberpunk: Neo Neon,Vertical Slice,Sprint 13
+TASK-178,1030,Photoshop,Environment,Cenário Modular,Blocagem de Kit Modular,Alta,8,36,38,2,125.0,4750.0,Done,Cyberpunk: Neo Neon,Prototype,Sprint 1
+TASK-179,1005,Substance 3D Painter,Level Design,Layout de Fases,Level Building,Média,5,17,20,3,100.0,2000.0,In Progress,Vampire's Legacy,Beta,Sprint 14
+TASK-180,1030,Unity,Gameplay,Sistemas/UI,HUD de Vida e Stamina,Alta,8,29,30,1,125.0,3750.0,In Progress,Cyberpunk: Neo Neon,Prototype,Sprint 3
+TASK-181,1028,ZBrush,Gameplay,Sistemas/UI,HUD de Vida e Stamina,Alta,2,6,8,2,45.0,360.0,To Do,Vampire's Legacy,Alpha,Sprint 10
+TASK-182,1048,Autodesk Maya,Audio,SFX & FMOD,Implementação de Áudio,Alta,8,29,31,2,120.0,3720.0,In Progress,Cyberpunk: Neo Neon,Prototype,Sprint 2
+TASK-183,1040,Substance 3D Painter,Environment,Cenário Modular,Blocagem de Kit Modular,Média,3,11,11,0,100.0,1100.0,To Do,Shadows of Eldoria,Prototype,Sprint 13
+TASK-184,1029,ZBrush,Gameplay,Sistemas/UI,HUD de Vida e Stamina,Alta,8,31,31,0,70.0,2170.0,To Do,Dungeon Crawlers Zero,Gold Master,Sprint 15
+TASK-185,1045,Blender,Art Direction,Concept de Cenário,Concept Art de Ambiente,Alta,8,25,26,1,45.0,1170.0,Done,Vampire's Legacy,Prototype,Sprint 12
+TASK-186,1036,Blender,Audio,SFX & FMOD,Implementação de Áudio,Média,5,19,20,1,70.0,1400.0,To Do,Aetheria: Astral Chronicles,Prototype,Sprint 2
+TASK-187,1047,FMOD Studio,Gameplay,Mecânicas,Sistema de Inventário,Alta,8,27,28,1,55.0,1540.0,To Do,Starlight Odyssey,Gold Master,Sprint 15
+TASK-188,1044,Autodesk Maya,Environment,Shaders & VFX,Shader de Blend,Alta,8,28,31,3,75.0,2325.0,In Progress,Hollow Knight: Silksong,Alpha,Sprint 6
+TASK-189,1011,Substance 3D Painter,Gameplay,Sistemas/UI,HUD de Vida e Stamina,Baixa,3,9,9,0,65.0,585.0,To Do,Cyberpunk: Neo Neon,Beta,Sprint 2
+TASK-190,1033,Unity,Environment,Shaders & VFX,Shader de Blend,Alta,8,32,33,1,60.0,1980.0,In Progress,Chronos: Before the Ashes,Gold Master,Sprint 13
+TASK-191,1014,Substance 3D Painter,Environment,Props,Modelagem Low-Poly de Caixas,Alta,8,26,28,2,50.0,1400.0,Done,Dungeon Crawlers Zero,Alpha,Sprint 6
+TASK-192,1031,Autodesk Maya,Environment,Props,Modelagem Low-Poly de Caixas,Média,3,9,11,2,70.0,770.0,To Do,Cyberpunk: Neo Neon,Vertical Slice,Sprint 7
+TASK-193,1024,Photoshop,Art Direction,Concept de Cenário,Concept Art de Ambiente,Média,3,12,12,0,120.0,1440.0,Done,Chronos: Before the Ashes,Alpha,Sprint 9
+TASK-194,1017,Blender,Environment,Cenário Modular,Blocagem de Kit Modular,Média,5,18,19,1,95.0,1805.0,In Progress,Starlight Odyssey,Vertical Slice,Sprint 10
+TASK-195,1001,Blender,Environment,Shaders & VFX,Shader de Blend,Alta,8,24,24,0,90.0,2160.0,To Do,Starlight Odyssey,Vertical Slice,Sprint 6
+TASK-196,1035,Autodesk Maya,Gameplay,Sistemas/UI,HUD de Vida e Stamina,Alta,8,26,27,1,90.0,2430.0,To Do,Starlight Odyssey,Vertical Slice,Sprint 4
+TASK-197,1027,FMOD Studio,Environment,Cenário Modular,Blocagem de Kit Modular,Alta,5,16,21,5,75.0,1575.0,Done,Chronos: Before the Ashes,Gold Master,Sprint 10
+TASK-198,1020,ZBrush,Environment,Shaders & VFX,Shader de Blend,Alta,8,27,27,0,85.0,2295.0,Done,Cyberpunk: Neo Neon,Beta,Sprint 11
+TASK-199,1049,Blender,Characters,Animação 3D,Ciclo de Caminhada,Média,5,20,23,3,85.0,1955.0,In Progress,Starlight Odyssey,Beta,Sprint 4
+TASK-200,1017,Unreal Engine,Gameplay,Sistemas/UI,HUD de Vida e Stamina,Alta,8,33,36,3,95.0,3420.0,In Progress,Shadows of Eldoria,Alpha,Sprint 12
+TASK-201,1007,Unity,Characters,Animação 3D,Ciclo de Caminhada,Média,2,8,10,2,90.0,900.0,To Do,Vampire's Legacy,Gold Master,Sprint 3
+TASK-202,1025,FMOD Studio,Level Design,Layout de Fases,Level Building,Alta,8,38,39,1,65.0,2535.0,To Do,Chronos: Before the Ashes,Alpha,Sprint 5
+TASK-203,1010,Autodesk Maya,Characters,Rigging,Rigging Facial,Alta,8,34,35,1,85.0,2975.0,Done,Chronos: Before the Ashes,Beta,Sprint 12
+TASK-204,1007,ZBrush,Gameplay,Sistemas/UI,HUD de Vida e Stamina,Média,3,14,16,2,90.0,1440.0,To Do,Cyberpunk: Neo Neon,Prototype,Sprint 8
+TASK-205,1043,Unity,Level Design,Layout de Fases,Level Building,Alta,2,7,9,2,60.0,540.0,To Do,Chronos: Before the Ashes,Vertical Slice,Sprint 3
+TASK-206,1025,FMOD Studio,Characters,Animação 3D,Ciclo de Caminhada,Média,5,16,17,1,65.0,1105.0,In Progress,Chronos: Before the Ashes,Prototype,Sprint 6
+TASK-207,1046,Unreal Engine,Characters,Rigging,Rigging Facial,Alta,8,32,32,0,60.0,1920.0,In Progress,Starlight Odyssey,Alpha,Sprint 13
+TASK-208,1024,Unreal Engine,Environment,Cenário Modular,Blocagem de Kit Modular,Alta,5,22,24,2,120.0,2880.0,In Progress,Cyberpunk: Neo Neon,Prototype,Sprint 8
+TASK-209,1002,Blender,Environment,Cenário Modular,Blocagem de Kit Modular,Média,5,19,20,1,70.0,1400.0,Done,Starlight Odyssey,Beta,Sprint 7
+TASK-210,1014,Unity,Environment,Props,Modelagem Low-Poly de Caixas,Média,5,18,20,2,50.0,1000.0,To Do,Vampire's Legacy,Prototype,Sprint 4
+TASK-211,1043,Unity,Gameplay,Sistemas/UI,HUD de Vida e Stamina,Média,2,6,7,1,60.0,420.0,In Progress,Dungeon Crawlers Zero,Gold Master,Sprint 5
+TASK-212,1003,FMOD Studio,Level Design,Layout de Fases,Level Building,Alta,8,34,37,3,55.0,2035.0,To Do,Vampire's Legacy,Alpha,Sprint 3
+TASK-213,1008,Autodesk Maya,Characters,Animação 3D,Ciclo de Caminhada,Alta,8,23,24,1,65.0,1560.0,Done,Dungeon Crawlers Zero,Beta,Sprint 7
+TASK-214,1042,Blender,Environment,Shaders & VFX,Shader de Blend,Média,2,8,9,1,155.0,1395.0,To Do,Starlight Odyssey,Beta,Sprint 8
+TASK-215,1002,ZBrush,Level Design,Layout de Fases,Level Building,Alta,8,39,40,1,70.0,2800.0,To Do,Vampire's Legacy,Beta,Sprint 7
+TASK-216,1012,Photoshop,Art Direction,Concept de Cenário,Concept Art de Ambiente,Alta,8,38,43,5,75.0,3225.0,Done,Cyberpunk: Neo Neon,Gold Master,Sprint 10
+TASK-217,1034,Blender,Environment,Cenário Modular,Blocagem de Kit Modular,Alta,5,21,26,5,55.0,1430.0,Done,Hollow Knight: Silksong,Vertical Slice,Sprint 8
+TASK-218,1015,Unreal Engine,Environment,Shaders & VFX,Shader de Blend,Alta,8,32,32,0,65.0,2080.0,To Do,Starlight Odyssey,Gold Master,Sprint 4
+TASK-219,1006,Unreal Engine,Level Design,Layout de Fases,Level Building,Baixa,3,9,9,0,110.0,990.0,Done,Dungeon Crawlers Zero,Prototype,Sprint 3
+TASK-220,1018,Autodesk Maya,Characters,Rigging,Rigging Facial,Alta,5,21,23,2,75.0,1725.0,To Do,Shadows of Eldoria,Gold Master,Sprint 8
+TASK-221,1026,FMOD Studio,Characters,Animação 3D,Ciclo de Caminhada,Baixa,2,6,6,0,120.0,720.0,In Progress,Dungeon Crawlers Zero,Beta,Sprint 4
+TASK-222,1046,Autodesk Maya,Art Direction,Concept de Cenário,Concept Art de Ambiente,Alta,8,38,39,1,60.0,2340.0,In Progress,Shadows of Eldoria,Alpha,Sprint 5
+TASK-223,1036,Unreal Engine,Characters,Animação 3D,Ciclo de Caminhada,Baixa,2,8,8,0,70.0,560.0,To Do,Chronos: Before the Ashes,Vertical Slice,Sprint 12
+TASK-224,1013,Blender,Environment,Props,Modelagem Low-Poly de Caixas,Alta,3,9,12,3,140.0,1680.0,To Do,Vampire's Legacy,Prototype,Sprint 10
+TASK-225,1012,Unreal Engine,Environment,Props,Modelagem Low-Poly de Caixas,Alta,5,21,21,0,75.0,1575.0,Done,Shadows of Eldoria,Vertical Slice,Sprint 6
+TASK-226,1016,Blender,Level Design,Layout de Fases,Level Building,Alta,8,26,26,0,130.0,3380.0,To Do,Dungeon Crawlers Zero,Vertical Slice,Sprint 12
+TASK-227,1029,Unity,Level Design,Layout de Fases,Level Building,Alta,8,27,27,0,70.0,1890.0,Done,Chronos: Before the Ashes,Gold Master,Sprint 14
+TASK-228,1024,Blender,Characters,Rigging,Rigging Facial,Alta,8,39,39,0,120.0,4680.0,Done,Hollow Knight: Silksong,Prototype,Sprint 5
+TASK-229,1008,FMOD Studio,Environment,Cenário Modular,Blocagem de Kit Modular,Média,3,13,16,3,65.0,1040.0,Done,Cyberpunk: Neo Neon,Beta,Sprint 15
+TASK-230,1026,ZBrush,Characters,Rigging,Rigging Facial,Alta,5,22,22,0,120.0,2640.0,Done,Cyberpunk: Neo Neon,Gold Master,Sprint 10
+TASK-231,1009,FMOD Studio,Characters,Rigging,Rigging Facial,Alta,8,25,27,2,85.0,2295.0,To Do,Cyberpunk: Neo Neon,Gold Master,Sprint 15
+TASK-232,1009,Unreal Engine,Audio,SFX & FMOD,Implementação de Áudio,Média,2,8,9,1,85.0,765.0,To Do,Shadows of Eldoria,Vertical Slice,Sprint 3
+TASK-233,1035,Unity,Environment,Props,Modelagem Low-Poly de Caixas,Média,5,17,17,0,90.0,1530.0,In Progress,Hollow Knight: Silksong,Prototype,Sprint 13
+TASK-234,1049,Unity,Environment,Props,Modelagem Low-Poly de Caixas,Alta,8,36,41,5,85.0,3485.0,Done,Shadows of Eldoria,Gold Master,Sprint 14
+TASK-235,1021,FMOD Studio,Gameplay,Sistemas/UI,HUD de Vida e Stamina,Média,3,15,16,1,125.0,2000.0,In Progress,Vampire's Legacy,Beta,Sprint 12
+TASK-236,1011,Photoshop,Gameplay,Sistemas/UI,HUD de Vida e Stamina,Alta,8,24,26,2,65.0,1690.0,In Progress,Shadows of Eldoria,Beta,Sprint 12
+TASK-237,1037,Substance 3D Painter,Art Direction,Concept de Cenário,Concept Art de Ambiente,Média,3,13,16,3,60.0,960.0,To Do,Hollow Knight: Silksong,Alpha,Sprint 10
+TASK-238,1050,FMOD Studio,Level Design,Layout de Fases,Level Building,Média,3,13,16,3,65.0,1040.0,To Do,Hollow Knight: Silksong,Vertical Slice,Sprint 14
+TASK-239,1016,FMOD Studio,Art Direction,Concept de Cenário,Concept Art de Ambiente,Alta,8,33,33,0,130.0,4290.0,In Progress,Vampire's Legacy,Beta,Sprint 8
+TASK-240,1021,ZBrush,Audio,SFX & FMOD,Implementação de Áudio,Alta,8,30,33,3,125.0,4125.0,In Progress,Hollow Knight: Silksong,Gold Master,Sprint 1
+TASK-241,1016,Unity,Art Direction,Concept de Cenário,Concept Art de Ambiente,Alta,8,33,38,5,130.0,4940.0,To Do,Dungeon Crawlers Zero,Vertical Slice,Sprint 5
+TASK-242,1007,Blender,Characters,Animação 3D,Ciclo de Caminhada,Alta,8,39,39,0,90.0,3510.0,To Do,Hollow Knight: Silksong,Beta,Sprint 6
+TASK-243,1009,FMOD Studio,Environment,Cenário Modular,Blocagem de Kit Modular,Média,3,12,15,3,85.0,1275.0,Done,Cyberpunk: Neo Neon,Vertical Slice,Sprint 13
+TASK-244,1019,Unreal Engine,Characters,Animação 3D,Ciclo de Caminhada,Alta,5,18,23,5,105.0,2415.0,Done,Dungeon Crawlers Zero,Beta,Sprint 12
+TASK-245,1008,Unreal Engine,Environment,Props,Modelagem Low-Poly de Caixas,Alta,8,23,26,3,65.0,1690.0,Done,Dungeon Crawlers Zero,Prototype,Sprint 12
+TASK-246,1011,Unreal Engine,Gameplay,Sistemas/UI,HUD de Vida e Stamina,Alta,8,34,34,0,65.0,2210.0,In Progress,Vampire's Legacy,Beta,Sprint 2
+TASK-247,1021,Unreal Engine,Environment,Cenário Modular,Blocagem de Kit Modular,Média,3,15,16,1,125.0,2000.0,To Do,Aetheria: Astral Chronicles,Gold Master,Sprint 15
+TASK-248,1040,FMOD Studio,Audio,SFX & FMOD,Implementação de Áudio,Alta,8,38,39,1,100.0,3900.0,To Do,Aetheria: Astral Chronicles,Vertical Slice,Sprint 15
+TASK-249,1024,Autodesk Maya,Characters,Rigging,Rigging Facial,Alta,8,27,28,1,120.0,3360.0,To Do,Hollow Knight: Silksong,Prototype,Sprint 13
+TASK-250,1050,FMOD Studio,Characters,Animação 3D,Ciclo de Caminhada,Alta,5,18,23,5,65.0,1495.0,Done,Dungeon Crawlers Zero,Prototype,Sprint 13

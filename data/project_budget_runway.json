@@ -7,6 +7,16 @@
   "burn_rate_mensal_estimado": 12500.0,
   "runway_meses_restantes": 3.6,
   "orcamento_sprints": {
+    "sprint_10": {
+      "orcamento_total": 2400.0,
+      "gasto_atual": 2400.0,
+      "saldo_disponivel": 0.0
+    },
+    "sprint_11": {
+      "orcamento_total": 2600.0,
+      "gasto_atual": 2550.0,
+      "saldo_disponivel": 50.0
+    },
     "sprint_12": {
       "orcamento_total": 2500.0,
       "gasto_atual": 1300.0,
@@ -16,6 +26,11 @@
       "orcamento_total": 2800.0,
       "gasto_atual": 0.0,
       "saldo_disponivel": 2800.0
+    },
+    "sprint_14": {
+      "orcamento_total": 3000.0,
+      "gasto_atual": 0.0,
+      "saldo_disponivel": 3000.0
     }
   },
   "previsao_lancamento_steam": {

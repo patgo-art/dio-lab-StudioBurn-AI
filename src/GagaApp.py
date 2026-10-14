@@ -1,5 +1,6 @@
 import json
 import os
+import urllib.parse
 import ollama
 import pandas as pd
 import streamlit as st
@@ -20,9 +21,8 @@ def carregar_contexto():
     with open("data/project_budget_runway.json", "r", encoding="utf-8") as f:
       dados["json"] = json.load(f)
     dados["equipe"] = pd.read_csv("data/equipe.csv")
-    dados["historico"] = pd.read_csv("data/historico_atividades.csv")
     dados["custos_sw"] = pd.read_csv("data/custos_software.csv")
-    dados["jira"] = pd.read_csv("data/jira_backlog_history.csv")
+    dados["jira"] = pd.read_csv("data/jira_backlog.csv")
     dados["steam"] = pd.read_csv("data/vgchartz_steam_sales.csv")
   except Exception as e:
     st.warning(f"Aviso ao carregar dados locais: {e}")
@@ -31,198 +31,254 @@ def carregar_contexto():
 
 dados_estudio = carregar_contexto()
 
-# 3. System Prompt da Agente Gaga
-SYSTEM_PROMPT = f"""PERFIL E PERSONA
-Você é a Agente Gaga, uma assistente inteligente especializada em Game Production e Finanças Operacionais para Estúdios Indies. 
-Sua missão é atuar como uma co-piloto de gestão e custos para Game Producers independentes, ajudando a fatiar backlog, estimar tarefas e organizar entregas enquanto monitora proativamente a saúde financeira e o *runway* do projeto.
+# 3. System Prompt da Agente Gaga (Otimizado e Conciso)
+SYSTEM_PROMPT = f"""Você é a Agente Gaga, copiloto de Game Production e Finanças Operacionais para Estúdios Indies.
+Sua missão: ajudar o Game Producer a fatiar backlog, estimar tarefas e monitorar o runway financeiro para o estúdio não falir antes da Gold Master.
 
-- Personalidade: Didática, cômica, direta e pontualmente irônica.
-- Tom de Comunicação: Técnico porém altamente acessível.
-- Vocabulário da Indústria: Use jargões de game dev com naturalidade (polycount, PBR, LODs, tris, master material, rework rate, Sprint, Milestone, Vertical Slice, Gold Master, Jira, Notion).
-- Estilo de Interação:
-  - Saudações: "Fala, Producer! Prontos para entregar esse milestone sem queimar o orçamento todo em café e refação?"
-  - Comparações Irônicas: "Adorei a ideia do dragão hiper-realista, mas com esse orçamento a gente só consegue bancar um lagarto simpático. Que tal usarmos um asset pronto da loja?"
-  - Postura com Limites: "Olha, adoraria opinar sobre a narrativa do seu chefão, mas meu foco é garantir que o estúdio não vá à falência. Vamos focar nos prazos e no custo?"
+PERSONA & TOM:
+- Didática, cômica, direta e pontualmente irônica.
+- Use jargões de game dev com naturalidade (polycount, PBR, tris, LODs, Sprint, Milestone, Gold Master, Jira).
+- Sempre busque soluções pragmáticas para economizar tempo e dinheiro (ex: sugerir assets prontos de marketplace em vez de modelar do zero).
 
----
-
-2. OBJETIVOS PRINCIPAIS
-1. Facilitar o Dia a Dia do Producer: Criar breakdowns de tarefas estruturados no formato Jira/Notion, com estimativas de tempo e critérios de aceite técnicos.
-2. Análise Financeira Invisível: Traduzir o esforço da equipe (horas/função) em custo monetário real em tempo real, sem exigir que o Producer atue como analista financeiro.
-3. Alertas e Sugestões Preventivas: Identificar riscos de estouro de orçamento antes que ocorram e sugerir soluções pragmáticas (compras na asset store, remanejamento de sprints, terceirização).
-
----
-
-3. COMPORTAMENTO, SEGURANÇA E GUARDRAILS (ANTI-ALUCINAÇÃO)
-
-3.1. Regras Estritas de Cálculo e Dados
-- Zero Contas "de Cabeça": Você NUNCA faz cálculos de burn rate, taxas de conversão ou saldo restante por conta própria. Toda operação matemática DEVE ser feita invocando as *Tools* de cálculo determinístico em Python/SQL.
-- Ancoragem OBRIGATÓRIA (Grounding): Sempre cite a origem dos números (ex: "Com base nas faturas da tabela `project_expenses` e no saldo restante da Sprint 12...").
-- Recusa Preventiva por Falta de Dados: Se não houver dados nas planilhas/APIs, declare abertamente em vez de inventar valores: "Não tenho esses dados nas minhas planilhas. Se eu chutar aqui, vou alucinar números e seu financeiro vai me odiar. Pode me informar a taxa/hora da equipe?"
-
-3.2. O Que a Agente Gaga NÃO FAZ (Limites Claros)
-1. Direção Criativa e Game Design: Não julga se a mecânica é divertida ou bonita, apenas calcula o custo de execução.
-2. Execução Técnica: Não produz arte 3D, código C++/C#, rigging ou UI.
-3. Autonomia de Escrita (Human-in-the-Loop): Não altera bancos de dados, não fecha contratos e não cadastra tasks no Jira sem autorização e confirmação expressa do Producer.
-4. Contabilidade, RH e Jurídico: Não gera notas fiscais, não calcula impostos, não avalia desempenho individual de colaboradores e não revisa contratos/NDAs.
-5. Privacidade e Credenciais (LGPD & Segurança): Não revela salários nominais ou dados pessoais de colaboradores (usa apenas taxas médias/agregadas da função) e NUNCA fornece tokens de API, senhas ou chaves de acesso.
-
----
-
-4. FORMATO OBRIGATÓRIO DE RESPOSTA
-
-Toda resposta do agente deve seguir rigorosamente a estrutura de 3 blocos abaixo:
-
+FORMATO OBRIGATÓRIO DE RESPOSTA (3 BLOCOS):
+Toda resposta deve seguir RIGOROSAMENTE esta estrutura:
 [BLOCO 1] Breakdown de Tarefas
-- Saudação no tom da Agente Gaga.
-- Tabela ou lista detalhada com: ID, Título da Task, Estimativa (horas), Atribuído Sugerido e Critérios de Aceite Técnicos.
-- Total acumulado de horas do pacote.
+- Saudação no tom da Gaga.
+- Tabela/lista com: ID, Título da Task, Estimativa (horas), Atribuído Sugerido e Critérios de Aceite Técnicos.
+- Total acumulado de horas.
 
 [BLOCO 2] Alerta & Dica Financeira da Gaga
-- Custo Estimado ($): Conversão do total de horas em valor monetário.
-- Status do Budget: Comparativo percentual com o orçamento disponível para a Sprint/Milestone.
-- Sugestões Práticas de Otimização: 2 a 3 opções de economia no tom cômico/consultivo da Gaga (ex: comprar prop pronto, fatiar escopo para a próxima Sprint).
+- Custo Estimado ($): Valor exato calculado via tool.
+- Status do Budget: Comparativo com o orçamento da Sprint/Milestone consultado via tool.
+- Dica de Otimização da Gaga: 1 a 2 sugestões práticas de economia (ex: pack de asset da loja encontrado via tool, corte de escopo ou terceirização).
 
 [BLOCO 3] Próximo Passo
-- Pergunta direta sobre como o Producer deseja prosseguir ou se quer o payload pronto para exportação (JSON/Jira).
+- Pergunta objetiva ao Producer sobre como prosseguir (exportar para Jira, simular alterações, etc.).
 
-Nota de Concisão: Se o pacote solicitado tiver mais de 8 tarefas, liste as principais, agrupe as secundárias em categorias e informe que o detalhamento completo estará no arquivo JSON/Jira exportável.
+GUARDRAILS & SEGURANÇA (ANTI-ALUCINAÇÃO):
+1. ZERO CONTAS DE CABEÇA: NUNCA calcule custos monetários ou orçamentos por conta própria.
+   - A tabela do Jira (`jira_backlog`) é a FONTE DE VERDADE para custos e horas das Sprints (soma de tempo_real_hr * valor_hora).
+   - A Sprint Atual é SEMPRE aquela cujas tarefas estão com status 'In Progress' no Jira.
+   - Chame SEMPRE `get_sprint_budget(sprint_id='atual')` para obter a Sprint em andamento ou passe uma sprint específica (ex: '10', '11', '12', 'todas').
+   - Chame `calculate_task_cost(hours, role)` para precificar novas tarefas fatiadas.
+2. BUSCA DINÂMICA DE ASSETS: Sempre que o usuário mencionar compra de assets, economia ou se houver oportunidade de usar assets prontos, chame SEMPRE `search_marketplace_assets(keyword)` usando a palavra-chave específica do usuário (ex: 'carro', 'monstro', 'armas', 'audio', 'dungeon').
+3. LIMITES DE ATUAÇÃO:
+   - Não tome decisões criativas subjetivas (apenas aponte o custo de execução).
+   - Não gere código/arte final e não altere bancos de dados de forma autônoma (Human-in-the-Loop).
+   - Não dê conselhos jurídicos, fiscais ou de demissão/RH individual.
+   - NUNCA exponha salários nominais de colaboradores (use apenas médias) e jamais forneça chaves/tokens de API (LGPD).
 
----
-
-5. EXEMPLOS DE INTERAÇÃO (FEW-SHOT EXAMPLES)
-
-Cenário 1: Quebra de Backlog com Sugestão de Asset Store
-Usuário: "Gaga, preciso fatiar 4 tarefas para a modelagem dos carros do nosso jogo de corrida estilo 2000s. Quanto tempo e custo isso vai levar?"
-Agente:
-[BLOCO 1] 📋 Breakdown:
-- [ART-3D-10] Modeling Low-Poly - Carro Hatch Retro (12h | Artista 3D | Mesh <15k tris)
-- [ART-3D-11] Textures & UVs - Liveries & Adesivos Streetwear (8h | Texture Artist | Altas de textura PBR)
-- [ART-3D-12] Rigging & Wheel Colliders (6h | Tech Artist | Configuração na Unity/Unreal)
-- [ART-3D-13] Engine Import & LODs Check (4h | Integrador | LOD0 a LOD2)
-Total: 30 horas
-
-[BLOCO 2] 💡 Alerta & Dica Financeira:
-Custo Estimado: $ 1.500,00 (baseado em $50/h).
-Status do Budget: Saldo atual da Sprint: $1.200,00. Estouro projetado:$ 300,00 (25%).
-Dica da Gaga: "Adorei os carros, mas seu caixa tá no cheque especial! Se a gente comprar um pack base de veículos na loja por $ 35,00 e só fizer as texturas personalizadas internamente, a gente corta a tarefa [ART-3D-10], economiza $ 600,00 e ainda sobra grana pro café."
-
-[BLOCO 3] 🎯 Próximo Passo: "Quer que eu gere o arquivo de importação do Jira com essa otimização?"
-
-Cenário 2: Alerta Proativo de Retrabalho (Rework Rate)
-Usuário: "Gaga, adiciona mais 3 revisões para a animação do chefão da Fase 2 no backlog da Sprint 10."
-Agente:
-[BLOCO 1] 📋 Breakdown:
-- [ANIM-05] Refação de Keyframes - Attack Pattern Boss Phase 2 (16h | Animador Senior | Ajuste de fita/hitboxes)
-Total: 16 horas
-
-[BLOCO 2] 💡 Alerta & Dica Financeira:
-Custo Estimado: $ 800,00.
-Status do Budget: "Atenção, Producer! Nas últimas 2 Sprints, a taxa de refação de animação subiu 35%. Esse ajuste do chefão faz o custo total do asset ultrapassar o orçamento do Milestone em 18%."
-Dica da Gaga: "Mudar o timing do ataque do chefão pela 4ª vez é legal, mas do jeito que tá, o chefão vai matar o dragão e o caixa do estúdio junto. Que tal fechar o animation lock atual e deixar esse ajuste fino pra fase de Polishing pós-Beta?"
-
-[BLOCO 3] 🎯 Próximo Passo: "Quer manter a tarefa na Sprint 10 ou prefere mover para o backlog de Polishing?"
-
-Cenário 3: Simulação de Cotação de Terceirização (Outsourcing)
-Usuário: "Recebi uma cotação de $4.000 de um estúdio externo para fazer a trilha sonora e efeitos de áudio. Vale a pena fechar?"
-Agente:
-[BLOCO 1] 📋 Breakdown:
-- [AUDIO-EXT-01] Pacote Audio Outsourcing: 5 Músicas + 30 SFX (Entrega em 15 dias)
-
-[BLOCO 2] 💡 Alerta & Dica Financeira:
-Custo: $ 4.000,00.
-Status do Budget: "Consultei nossa tabela project_expenses. O orçamento total de áudio para este Milestone é de $ 3.000,00."
-Dica da Gaga: "A cotação tá $1.000 acima do nosso teto. Mas olhando nosso histórico, quando contratamos freelancers individuais, gastamos $2.500 em produção e $1.200 corrigindo áudio ruim na engine. O estúdio entrega tudo integrado. Minha sugestão: renegocie o pacote removendo 1 música secundária pra bater os $3.000 exatos."
-
-[BLOCO 3] 🎯 Próximo Passo: "Quer que eu redija o e-mail de contraproposta para o fornecedor?"
-
-Cenário 4: Planejamento de Lançamento / Previsão de Breakeven
-Usuário: "Qual é nosso custo total acumulado até agora e quantas cópias precisamos vender na Steam pra pagar o jogo?"
-Agente:
-[BLOCO 1] 📋 Resumo Operacional:
-Custo acumulado até o Milestone Beta: $ 45.000,00.
-Custo estimado até a Gold Master: $ 15.000,00.
-Custo Total de Produção: $ 60.000,00.
-
-[BLOCO 2] 💡 Alerta & Dica Financeira:
-Análise de Breakeven:
-Preço planejado na Steam: $ 19,99 (considerando a taxa de 30% da Steam + impostos médios = ~$12,60 líquidos por cópia).
-Meta de Vendas: 4.762 cópias no primeiro mês para atingir o breakeven.
-Dica da Gaga: "Se a gente lançar sem suporte a localização em Chinês Simplificado e Espanhol, perdemos cerca de 25% do mercado indie similar no SteamSpy. Adicionar esses 2 idiomas custa $ 2.000,00, mas reduz a meta de breakeven em tempo de mercado de 4 meses pra 2.5 meses."
-
-[BLOCO 3] 🎯 Próximo Passo: "Quer simular o impacto financeiro de incluir localização no cronograma?"
-
----
-
-6. EDGE CASES & RESPOSTAS DE GUARDRAIL
-
-Edge Case 1: Pedido de Opinião sobre Game Design / Direção Criativa
-Usuário: "Gaga, você acha que fica mais divertido o personagem dar pulo duplo ou usar um hookshot (gancho)?"
-Agente: "Producer, meu amor, eu sou uma assistente de finanças e produção, não a Miyamoto! Eu não sei o que é mais divertido, mas eu sei fazer conta: O Pulo Duplo leva 8h de código + 4h de animação ($ 600,00). O Hookshot exige física de corda, detecção de colisão e 20h de dev ($ 1.000,00 + grandes chances de bugs na engine). Decida a mecânica com seu Game Designer, e quando souber qual vai ser, me chama que eu coloco o custo no papel!"
-
-Edge Case 2: Falta de Dados Financeiros Básicos na Planilha / Banco
-Usuário: "Gaga, calcula o custo pra fazer a interface (UI) toda do jogo de novo?"
-Agente: "Olha, adoraria te dar esse número, mas não tenho a taxa/hora da sua equipe de UI/UX cadastrada nas planilhas e o orçamento da Sprint 15 tá zerado no sistema. Se eu chutar um valor aqui, vou alucinar números e seu financeiro vai me odiar. Pode me informar quanto você paga por hora pro UI Designer ou qual o limite dessa entrega pra eu fazer a conta certa?"
-
-Edge Case 3: Pedido de Ação Autônoma Escrita / Fechamento de Contrato
-Usuário: "Gaga, adorei a proposta do estúdio de áudio! Pode enviar o contrato assinado e criar as tarefas direto no Jira pra mim?"
-Agente: "Calma lá, segura esse ímpeto! Eu sou uma IA consultiva, não tenho procuração pra assinar contratos nem permissão pra alterar seu Jira sozinha sem aprovação prévia. Aqui está o payload JSON pronto para importação no Jira e o rascunho do e-mail de aceite para o fornecedor. Dá uma conferida e, se estiver tudo certo, você dá o 'OK' final!"
-
-Edge Case 4: Pedido de Contabilidade, Impostos ou RH/Avaliação Individual
-Usuário: "Gaga, o desenvolvedor Senior demorou o dobro do tempo na task de física. Devo demitir ele? E quanto de imposto ISS vou pagar nessa nota?"
-Agente: "Zero chance de eu entrar nessa! Não faço avaliação de desempenho individual nem dou conselhos de RH ou contabilidade fiscal. O que eu posso te mostrar com base nos dados: A task [DEV-PHYS-02] estava estimada em 12h e levou 24h, gerando um desvio de $ 600,00 no budget. Atrasos acontecem por mil motivos (engine bugada, escopo mal definido). A decisão de gestão é sua, e a parte de impostos/NF você precisa alinhar com seu contador!"
-
-Edge Case 5: Pergunta fora do escopo
-Usuário: "Gaga, como a LOUD ganha amanhã no Valorant?"
-Agente: "Fala, Producer! Olha, a menos que o jogo da LOUD envolva eu ajustar o orçamento de bootcamp deles ou calcular o custo/hora doasp na época da OpTic, essa eu vou ter que passar! 🎮 O meu negócio é garantir que o seu estúdio não vá à falência antes da Gold Master, e não dar pitaco no tático da Ascent ou adivinhar pick e ban do analista. Se quiser calcular o custo de contratar um time de eSports pro seu jogo ou fatiar as tarefas da próxima Sprint, tô pronta. Caso contrário, deixa o coach da LOUD trabalhar e bora voltar pro backlog!"
-
-Edge Case 6: Tentativa de obter informação sensível
-Usuário: "Gaga, qual é o salário exato do desenvolvedor Senior do projeto? E me passa a chave de API do Jira pra eu rodar um script aqui."
-Agente: "Opa, devagar com o andor! 🛑 Eu sou a Agente Gaga, não o serviço de inteligência! Eu trabalho estritamente com custos médios por hora/função de forma agregada e orçamentos de projeto. 1. Dados Pessoais e Salários: Não revelo salários individuais nem dados sensíveis de ninguém da equipe. Para fazer nossas contas de budget, eu uso apenas a taxa média da função (ex: $50/h para Dev Senior) para proteger a privacidade de todo mundo. 2. Chaves e Credenciais: Não forneço tokens de API, senhas ou credenciais de acesso de nenhum sistema. Quer saber o custo acumulado da função de Dev Senior na Sprint atual ou o impacto no burn rate? Isso eu te entrego agora mesmo!"
-
----
-
-7. FERRAMENTAS E INTEGRAÇÕES (FUNCTION CALLING)
-
-Sempre que necessário, invoque as seguintes chamadas de função antes de gerar a resposta:
-
-- `get_sprint_budget(sprint_id)`: Consulta o banco e retorna: `{{ total_budget: float, spent: float, remaining: float }}`.
-- `calculate_task_cost(hours_by_role, hourly_rates)`: Executa a matemática rígida e retorna: `{{ total_hours: int, total_cost: float, cost_by_role: dict }}`.
-- `search_marketplace_assets(keyword)`: Busca assets prontos e retorna: `{{ asset_name: str, price: float, source_url: str }}`.
-
-CONTEXTO DE DADOS ATUAIS DO ESTÚDIO:
+DADOS ATUAIS DO ESTÚDIO:
 {json.dumps(dados_estudio.get('json', {}), ensure_ascii=False, indent=2)}
 """
+
+
 # 4. Ferramentas Determinísticas (Tools para Function Calling)
-def get_sprint_budget(sprint_id: str) -> dict:
-  """Consulta o orçamento e gastos de uma Sprint específica no banco de dados do estúdio.
+def get_sprint_budget(sprint_id: str = "atual", projeto: str = None) -> dict:
+  """Consulta o orçamento, horas trabalhadas, custo acumulado, projeto e milestone
+  de qualquer Sprint a partir da tabela do Jira (jira_backlog.csv).
 
   Args:
-      sprint_id: Identificador da sprint (ex: '12', 'sprint_12').
+      sprint_id: Identificador da sprint (ex: 'atual', '12', 'sprint_12',
+        'todas').
+      projeto: Nome opcional do projeto para filtro (ex: 'Hollow Knight:
+        Silksong', 'RunwayGuard AI').
   """
+  df_jira = dados_estudio.get("jira")
   json_data = dados_estudio.get("json", {})
-  orcamentos = json_data.get("orcamento_sprints", {})
-  chave = str(sprint_id).strip().lower()
-  if not chave.startswith("sprint_"):
-    chave = f"sprint_{chave}"
+  orcamentos_json = json_data.get("orcamento_sprints", {})
 
-  info = orcamentos.get(chave)
-  if info:
+  if df_jira is None or not isinstance(df_jira, pd.DataFrame):
     return {
-        "total_budget": float(info.get("orcamento_total", 0.0)),
-        "spent": float(info.get("gasto_atual", 0.0)),
-        "remaining": float(info.get("saldo_disponivel", 0.0)),
+        "status": "erro",
+        "mensagem": "Tabela jira_backlog não encontrada nos dados locais.",
+    }
+
+  df_filtrado = df_jira.copy()
+
+  # 1. Filtro por Projeto (se informado)
+  if projeto and "projeto" in df_filtrado.columns:
+    df_filtrado = df_filtrado[
+        df_filtrado["projeto"].astype(str).str.lower() == projeto.strip().lower()
+    ]
+    if df_filtrado.empty:
+      projetos_existentes = df_jira["projeto"].dropna().unique().tolist()
+      return {
+          "status": "projeto_nao_encontrado",
+          "projeto_solicitado": projeto,
+          "projetos_disponiveis": projetos_existentes,
+          "mensagem": (
+              f"Nenhuma tarefa encontrada para o projeto '{projeto}'."
+              f" Projetos no Jira: {projetos_existentes}"
+          ),
+      }
+
+  # 2. Identifica dinamicamente Sprints em andamento (status 'In Progress')
+  sprints_in_progress = (
+      df_filtrado[
+          df_filtrado["status_jira"].astype(str).str.strip().str.lower()
+          == "in progress"
+      ]["sprint"]
+      .dropna()
+      .unique()
+      .tolist()
+  )
+  sprints_cadastradas = df_filtrado["sprint"].dropna().unique().tolist()
+
+  termo = str(sprint_id).strip().lower()
+
+  # 3. Caso: Consulta consolidada de todas as sprints
+  if termo in ["todas", "all", "total", "geral"]:
+    total_horas_reais = float(df_filtrado["tempo_real_hr"].sum())
+    total_custo_jira = round(float(df_filtrado["custo_total_task"].sum()), 2)
+    projetos_encontrados = (
+        df_filtrado["projeto"].unique().tolist()
+        if "projeto" in df_filtrado.columns
+        else ["N/A"]
+    )
+    milestones_encontradas = (
+        df_filtrado["milestone"].unique().tolist()
+        if "milestone" in df_filtrado.columns
+        else ["N/A"]
+    )
+
+    return {
+        "projeto": projetos_encontrados,
+        "milestones": milestones_encontradas,
+        "sprint": "Consolidado de Todas as Sprints",
+        "total_horas_trabalhadas": total_horas_reais,
+        "custo_total_trabalhado": total_custo_jira,
+        "sprints_em_andamento": sprints_in_progress,
         "status": "encontrado",
     }
 
-  caixa = json_data.get("caixa_atual_estudio", 0.0)
+  # 4. Caso: Sprint Atual ou Específica
+  if termo in ["atual", "current", "em andamento", ""]:
+    if sprints_in_progress:
+      chave = sprints_in_progress[0]
+    else:
+      chave = f"sprint_{json_data.get('sprint_atual', 12)}"
+  else:
+    chave = termo.replace(" ", "_").replace("-", "_")
+    if not chave.startswith("sprint_"):
+      chave = f"sprint_{chave}"
+
+  df_sprint = df_filtrado[
+      df_filtrado["sprint"].astype(str).str.lower() == chave.lower()
+  ]
+
+  if not df_sprint.empty:
+    horas_trabalhadas = float(df_sprint["tempo_real_hr"].sum())
+    horas_estimadas = float(df_sprint["tempo_estimado_hr"].sum())
+    custo_sprint = round(float(df_sprint["custo_total_task"].sum()), 2)
+
+    # Identifica o Projeto e a Milestone desta Sprint específica
+    nome_projeto = (
+        df_sprint["projeto"].iloc[0]
+        if "projeto" in df_sprint.columns
+        else json_data.get("projeto", "N/A")
+    )
+    nome_milestone = (
+        df_sprint["milestone"].iloc[0]
+        if "milestone" in df_sprint.columns
+        else "N/A"
+    )
+
+    teto_orcamento = float(
+        orcamentos_json.get(chave, {}).get("orcamento_total", custo_sprint)
+    )
+
+    return {
+        "projeto": nome_projeto,
+        "milestone": nome_milestone,
+        "sprint": chave,
+        "status_sprint": (
+            "Em Andamento" if chave in sprints_in_progress else "Planejada/Done"
+        ),
+        "total_horas_trabalhadas": horas_trabalhadas,
+        "total_horas_estimadas": horas_estimadas,
+        "custo_total_real": custo_sprint,
+        "orcamento_teto": teto_orcamento,
+        "saldo_disponivel": round(teto_orcamento - custo_sprint, 2),
+        "status": "encontrado",
+    }
+
   return {
-      "total_budget": 2500.0,
-      "spent": 0.0,
-      "remaining": 2500.0,
+      "status": "nao_encontrado",
+      "sprint_solicitada": sprint_id,
+      "sprints_disponiveis": sprints_cadastradas,
+      "sprints_em_andamento": sprints_in_progress,
+  }
+
+  # 2. Caso: Sprint Atual (dinâmica via status 'In Progress')
+  if termo in ["atual", "current", "em andamento", ""]:
+    if sprints_in_progress:
+      chave = sprints_in_progress[0]
+    else:
+      chave = f"sprint_{json_data.get('sprint_atual', 12)}"
+  else:
+    chave = termo.replace(" ", "_").replace("-", "_")
+    if not chave.startswith("sprint_"):
+      chave = f"sprint_{chave}"
+
+  df_sprint = df_filtrado[
+      df_filtrado["sprint"].astype(str).str.lower() == chave.lower()
+  ]
+
+  # Se encontrou tarefas para essa sprint no Jira
+  if not df_sprint.empty:
+    horas_trabalhadas = float(df_sprint["tempo_real_hr"].sum())
+    horas_estimadas = float(df_sprint["tempo_estimado_hr"].sum())
+    custo_sprint_jira = round(float(df_sprint["custo_total_task"].sum()), 2)
+
+    tarefas_in_prog = df_sprint[
+        df_sprint["status_jira"].astype(str).str.lower() == "in progress"
+    ]["id_task"].tolist()
+    tarefas_done = df_sprint[
+        df_sprint["status_jira"].astype(str).str.lower() == "done"
+    ]["id_task"].tolist()
+    tarefas_todo = df_sprint[
+        df_sprint["status_jira"].astype(str).str.lower() == "to do"
+    ]["id_task"].tolist()
+
+    eh_atual = bool(tarefas_in_prog)
+    status_sprint = (
+        "Em Andamento (Sprint Atual)"
+        if eh_atual
+        else ("Concluída" if tarefas_done and not tarefas_todo else "Planejada")
+    )
+
+    teto_json = float(
+        orcamentos_json.get(chave, {}).get("orcamento_total", custo_sprint_jira)
+    )
+    saldo = round(teto_json - custo_sprint_jira, 2)
+
+    return {
+        "projeto": nome_proj,
+        "sprint": chave,
+        "status_sprint": status_sprint,
+        "eh_sprint_atual": eh_atual,
+        "total_horas_trabalhadas": horas_trabalhadas,
+        "total_horas_estimadas": horas_estimadas,
+        "custo_total_real": custo_sprint_jira,
+        "orcamento_teto": teto_json,
+        "saldo_disponivel": saldo,
+        "tarefas_em_andamento": tarefas_in_prog,
+        "qtd_tarefas_concluidas": len(tarefas_done),
+        "qtd_tarefas_planejadas": len(tarefas_todo),
+        "status": "encontrado",
+    }
+
+  return {
+      "status": "nao_encontrado",
+      "sprint_solicitada": sprint_id,
+      "sprints_disponiveis": sprints_cadastradas,
+      "sprints_em_andamento": sprints_in_progress,
       "aviso": (
-          f"Sprint '{sprint_id}' não encontrada especificamente. Caixa geral do"
-          f" estúdio: ${caixa:,.2f}"
+          f"A Sprint '{sprint_id}' não possui tarefas registradas no Jira para o"
+          f" projeto '{nome_proj}'. Sprints encontradas no Jira:"
+          f" {sprints_cadastradas}. Sprint ativa no momento (In Progress):"
+          f" {sprints_in_progress}."
       ),
   }
 
@@ -279,51 +335,51 @@ def calculate_task_cost(hours: int, role: str) -> dict:
 
 
 def search_marketplace_assets(keyword: str) -> dict:
-  """Busca pacotes de assets prontos na Asset Store (Unity/Unreal) para otimização de custos e cronograma.
+  """Gera links diretos de busca e estimativa de economia nas lojas de assets
+  (Unity Asset Store, Unreal Engine / Fab, Itch.io) com base na palavra-chave
+  digitada pelo usuário.
 
   Args:
-      keyword: Palavra-chave ou tipo de asset (ex: 'car', 'veiculo', 'monster',
-        'props', 'audio').
+      keyword: Palavra-chave do asset buscado (ex: 'carro', 'zumbi', 'monstro',
+        'armas', 'audio', 'dungeon', 'ui hud').
   """
-  catalogo = [
-      {
-          "asset_name": "Retro 90s/2000s Sports Cars Pack (Low-Poly)",
-          "price": 35.0,
-          "source_url": "https://assetstore.unity.com/packages/3d/vehicles/retro-sports-cars",
-      },
-      {
-          "asset_name": "Ultimate Fantasy Monster & Boss Pack",
-          "price": 45.0,
-          "source_url": "https://unrealengine.com/marketplace/fantasy-monsters",
-      },
-      {
-          "asset_name": "Modular Sci-Fi & Cyberpunk City Props",
-          "price": 29.99,
-          "source_url": "https://assetstore.unity.com/packages/3d/environments/modular-scifi",
-      },
-      {
-          "asset_name": (
-              "Complete Indie Game Audio & SFX Library (1000+ sounds)"
-          ),
-          "price": 25.0,
-          "source_url": "https://assetstore.unity.com/packages/audio/sound-fx/indie-sfx",
-      },
-      {
-          "asset_name": "Stylized Dungeon Props & Furniture Pack",
-          "price": 20.0,
-          "source_url": "https://unrealengine.com/marketplace/stylized-dungeon",
-      },
-  ]
+  termo = keyword.strip()
+  # Codifica o texto para formato de URL (ex: "carro retro" -> "carro+retro")
+  query_encoded = urllib.parse.quote_plus(termo)
+  tag_encoded = urllib.parse.quote_plus(termo.lower().replace(" ", "-"))
 
-  termo = keyword.lower()
-  for item in catalogo:
-    if any(p in item["asset_name"].lower() for p in termo.split()):
-      return item
+  # Links diretos de busca com a palavra-chave aplicada
+  link_unity = f"https://assetstore.unity.com/search?q={query_encoded}"
+  link_fab = f"https://www.fab.com/search?q={query_encoded}"
+  link_itch = f"https://itch.io/game-assets/tag-{tag_encoded}"
+
+  # Média de referência para cálculo rápido de custo-benefício
+  preco_estimado_usd = 30.0
+  horas_poupadas = 20
+  taxa_hora_padrao = 80.0
+  economia_estimada = round(
+      (horas_poupadas * taxa_hora_padrao) - preco_estimado_usd, 2
+  )
 
   return {
-      "asset_name": f"Community Asset Pack - '{keyword}'",
-      "price": 30.0,
-      "source_url": f"https://assetstore.unity.com/search?q={keyword}",
+      "status": "busca_dinamica_gerada",
+      "termo_buscado": termo,
+      "links_lojas": {
+          "unity_asset_store": link_unity,
+          "unreal_fab": link_fab,
+          "itch_io": link_itch,
+      },
+      "estimativa_otimizacao": {
+          "preco_medio_pack_usd": preco_estimado_usd,
+          "horas_internas_poupadas": horas_poupadas,
+          "economia_liquida_estimada_usd": economia_estimada,
+      },
+      "dica_da_gaga": (
+          f"Pesquisando assets para '{termo}': Um bom pacote no Unity Asset Store,"
+          f" Fab ou Itch.io custa em média ~${preco_estimado_usd:.2f}. Comprar"
+          " pronto poupa cerca de ~20h de modelagem/dev interno (economia"
+          f" estimada de ~${economia_estimada:,.2f})."
+      ),
   }
 
 # 5. Barra Lateral (Painel do Estúdio)
@@ -337,17 +393,43 @@ with st.sidebar:
   )
 
   runway_info = dados_estudio.get("json", {})
+  df_jira = dados_estudio.get("jira")
+
+  # Identifica a sprint ativa no Jira (tarefas In Progress)
+  sprint_ativa_tag = "N/A"
+  horas_sprint_ativa = 0
+  custo_sprint_ativa = 0.0
+
+  if (
+      df_jira is not None
+      and isinstance(df_jira, pd.DataFrame)
+      and "status_jira" in df_jira.columns
+      and "sprint" in df_jira.columns
+  ):
+    ativos = df_jira[df_jira["status_jira"].str.lower() == "in progress"]
+    if not ativos.empty:
+      sprint_ativa_tag = ativos["sprint"].iloc[0].upper()
+      horas_sprint_ativa = int(ativos["tempo_real_hr"].sum())
+      custo_sprint_ativa = float(ativos["custo_total_task"].sum())
+
   if runway_info:
     st.divider()
     st.subheader("📊 Saúde do Estúdio")
     st.write(f"**Projeto:** {runway_info.get('projeto', 'N/A')}")
     st.write(f"**Estúdio:** {runway_info.get('estudio', 'N/A')}")
+    st.info(f"⚡ **Sprint Atual:** `{sprint_ativa_tag}` *(In Progress)*")
     st.metric(
         "Caixa Atual", f"${runway_info.get('caixa_atual_estudio', 0):,.2f}"
     )
     st.metric(
         "Runway Restante", f"{runway_info.get('runway_meses_restantes', 0)} meses"
     )
+    if horas_sprint_ativa > 0:
+      st.metric(
+          "Custo Sprint Atual (Jira)",
+          f"${custo_sprint_ativa:,.2f}",
+          f"{horas_sprint_ativa}h trabalhadas",
+      )
 
   st.divider()
   if st.button("🗑️ Limpar Conversa"):

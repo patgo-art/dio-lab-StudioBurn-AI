@@ -1,51 +1,51 @@
-id_profissional,nome,funcao,categoria,subcategoria,valor_hora,nivel
-1001,Patrícia Maria Silva,Animador,Characters,Rigging,90.00,Senior
-1002,Lucas Mendes,Animador,Characters,Animação 3D,70.00,Pleno
-1003,Beatriz Santos,Texture Artist,Environment,Textura PBR,55.00,Junior
-1004,Gabriel Lima,Programador,Gameplay,Sistemas/UI,105.00,Pleno
-1005,Carla Souza,Tech Art,Environment,Shaders & VFX,100.00,Junior
-1006,Rodrigo Alves,Tech Art,Environment,Shaders & VFX,110.00,Junior
-1007,Fernanda Oliveira,Artista 3D,Environment,Props,90.00,Pleno
-1008,Matheus Costa,Sound Designer,Audio,SFX & FMOD,65.00,Junior
-1009,Juliana Rocha,Level Designer,Level Design,Layout de Fases,85.00,Junior
-1010,Thiago Martins,Texture Artist,Environment,Textura PBR,85.00,Pleno
-1011,Camila Ferreira,Concept Artist,Art Direction,Concept de Cenário,65.00,Junior
-1012,Bruno Carvalho,Programador,Gameplay,Sistemas/UI,75.00,Pleno
-1013,Aline Pereira,Concept Artist,Art Direction,Concept de Cenário,140.00,Lead
-1014,Diego Ribeiro,Concept Artist,Art Direction,Concept de Cenário,50.00,Junior
-1015,Mariana Barbosa,Sound Designer,Audio,SFX & FMOD,65.00,Pleno
-1016,Felipe Gomes,Game Producer,Management,Gestão de Sprints,130.00,Senior
-1017,Larissa Cardoso,Artista 3D,Environment,Props,95.00,Pleno
-1018,Rafael Dias,Artista 3D,Environment,Cenário Modular,75.00,Pleno
-1019,Amanda Teixeira,Programador,Gameplay,Mecânicas,105.00,Junior
-1020,Gustavo Araujo,Level Designer,Level Design,Layout de Fases,85.00,Pleno
-1021,Letícia Castro,Programador,Gameplay,Mecânicas,125.00,Pleno
-1022,Vinícius Fernandes,Animador,Characters,Animação 3D,85.00,Pleno
-1023,Vanessa Machado,Animador,Characters,Animação 3D,125.00,Senior
-1024,Leonardo Correia,Programador,Gameplay,Sistemas/UI,120.00,Pleno
-1025,Isabela Nunes,Sound Designer,Audio,SFX & FMOD,65.00,Pleno
-1026,Eduardo Cavalcanti,Game Producer,Management,Gestão de Sprints,120.00,Junior
-1027,Priscila Moreira,Animador,Characters,Animação 3D,75.00,Pleno
-1028,Marcelo Ramos,QA Analyst,QA,Testes Funcionais,45.00,Junior
-1029,Tatiane Monteiro,Texture Artist,Environment,Textura PBR,70.00,Senior
-1030,Caio Freitas,Animador,Characters,Rigging,125.00,Senior
-1031,Rafaela Vieira,Concept Artist,Art Direction,Concept de Cenário,70.00,Pleno
-1032,Igor Marques,Animador,Characters,Rigging,75.00,Pleno
-1033,Luana Peixoto,Texture Artist,Environment,Textura PBR,60.00,Pleno
-1034,Renan Silveira,Texture Artist,Environment,Textura PBR,55.00,Pleno
-1035,Carolina Duarte,Texture Artist,Environment,Textura PBR,90.00,Senior
-1036,Danilo Siqueira,Animador,Characters,Rigging,70.00,Junior
-1037,Nathalia Farias,Level Designer,Level Design,Layout de Fases,60.00,Junior
-1038,Guilherme Barros,Animador,Characters,Rigging,85.00,Pleno
-1039,Bianca Viana,Programador,Gameplay,Mecânicas,150.00,Lead
-1040,Henrique Franco,Game Producer,Management,Gestão de Sprints,100.00,Pleno
-1041,Débora Guimarães,Game Producer,Management,Gestão de Sprints,85.00,Junior
-1042,Samuel Borges,Tech Art,Environment,Shaders & VFX,155.00,Senior
-1043,Thais Resende,Concept Artist,Art Direction,Concept de Cenário,60.00,Junior
-1044,Alexandre Neves,Sound Designer,Audio,SFX & FMOD,75.00,Junior
-1045,Sabrina Pires,QA Analyst,QA,Testes Funcionais,45.00,Pleno
-1046,Victor Meireles,Concept Artist,Art Direction,Concept de Cenário,60.00,Pleno
-1047,Monique Camargo,Concept Artist,Art Direction,Concept de Cenário,55.00,Pleno
-1048,Fabio Godoy,Game Producer,Management,Gestão de Sprints,120.00,Senior
-1049,Joana Aguiar,Animador,Characters,Animação 3D,85.00,Pleno
-1050,Maurício Caldeira,Artista 3D,Environment,Props,65.00,Junior
+id_profissional,nome,funcao,categoria,subcategoria,valor_hora,nivel,status
+1001,Patrícia Maria Silva,Animador,Characters,Rigging,90.0,Senior,Ativo
+1002,Lucas Mendes,Animador,Characters,Animação 3D,70.0,Pleno,Inativo
+1003,Beatriz Santos,Texture Artist,Environment,Textura PBR,55.0,Junior,Ativo
+1004,Gabriel Lima,Programador,Gameplay,Sistemas/UI,105.0,Pleno,Inativo
+1005,Carla Souza,Tech Art,Environment,Shaders & VFX,100.0,Junior,Inativo
+1006,Rodrigo Alves,Tech Art,Environment,Shaders & VFX,110.0,Junior,Ativo
+1007,Fernanda Oliveira,Artista 3D,Environment,Props,90.0,Pleno,Ativo
+1008,Matheus Costa,Sound Designer,Audio,SFX & FMOD,65.0,Junior,Ativo
+1009,Juliana Rocha,Level Designer,Level Design,Layout de Fases,85.0,Junior,Ativo
+1010,Thiago Martins,Texture Artist,Environment,Textura PBR,85.0,Pleno,Inativo
+1011,Camila Ferreira,Concept Artist,Art Direction,Concept de Cenário,65.0,Junior,Ativo
+1012,Bruno Carvalho,Programador,Gameplay,Sistemas/UI,75.0,Pleno,Ativo
+1013,Aline Pereira,Concept Artist,Art Direction,Concept de Cenário,140.0,Lead,Inativo
+1014,Diego Ribeiro,Concept Artist,Art Direction,Concept de Cenário,50.0,Junior,Ativo
+1015,Mariana Barbosa,Sound Designer,Audio,SFX & FMOD,65.0,Pleno,Ativo
+1016,Felipe Gomes,Game Producer,Management,Gestão de Sprints,130.0,Senior,Ativo
+1017,Larissa Cardoso,Artista 3D,Environment,Props,95.0,Pleno,Ativo
+1018,Rafael Dias,Artista 3D,Environment,Cenário Modular,75.0,Pleno,Inativo
+1019,Amanda Teixeira,Programador,Gameplay,Mecânicas,105.0,Junior,Ativo
+1020,Gustavo Araujo,Level Designer,Level Design,Layout de Fases,85.0,Pleno,Ativo
+1021,Letícia Castro,Programador,Gameplay,Mecânicas,125.0,Pleno,Ativo
+1022,Vinícius Fernandes,Animador,Characters,Animação 3D,85.0,Pleno,Inativo
+1023,Vanessa Machado,Animador,Characters,Animação 3D,125.0,Senior,Ativo
+1024,Leonardo Correia,Programador,Gameplay,Sistemas/UI,120.0,Pleno,Ativo
+1025,Isabela Nunes,Sound Designer,Audio,SFX & FMOD,65.0,Pleno,Ativo
+1026,Eduardo Cavalcanti,Game Producer,Management,Gestão de Sprints,120.0,Junior,Ativo
+1027,Priscila Moreira,Animador,Characters,Animação 3D,75.0,Pleno,Ativo
+1028,Marcelo Ramos,QA Analyst,QA,Testes Funcionais,45.0,Junior,Ativo
+1029,Tatiane Monteiro,Texture Artist,Environment,Textura PBR,70.0,Senior,Ativo
+1030,Caio Freitas,Animador,Characters,Rigging,125.0,Senior,Ativo
+1031,Rafaela Vieira,Concept Artist,Art Direction,Concept de Cenário,70.0,Pleno,Ativo
+1032,Igor Marques,Animador,Characters,Rigging,75.0,Pleno,Ativo
+1033,Luana Peixoto,Texture Artist,Environment,Textura PBR,60.0,Pleno,Ativo
+1034,Renan Silveira,Texture Artist,Environment,Textura PBR,55.0,Pleno,Ativo
+1035,Carolina Duarte,Texture Artist,Environment,Textura PBR,90.0,Senior,Ativo
+1036,Danilo Siqueira,Animador,Characters,Rigging,70.0,Junior,Inativo
+1037,Nathalia Farias,Level Designer,Level Design,Layout de Fases,60.0,Junior,Ativo
+1038,Guilherme Barros,Animador,Characters,Rigging,85.0,Pleno,Inativo
+1039,Bianca Viana,Programador,Gameplay,Mecânicas,150.0,Lead,Ativo
+1040,Henrique Franco,Game Producer,Management,Gestão de Sprints,100.0,Pleno,Ativo
+1041,Débora Guimarães,Game Producer,Management,Gestão de Sprints,85.0,Junior,Ativo
+1042,Samuel Borges,Tech Art,Environment,Shaders & VFX,155.0,Senior,Ativo
+1043,Thais Resende,Concept Artist,Art Direction,Concept de Cenário,60.0,Junior,Ativo
+1044,Alexandre Neves,Sound Designer,Audio,SFX & FMOD,75.0,Junior,Ativo
+1045,Sabrina Pires,QA Analyst,QA,Testes Funcionais,45.0,Pleno,Ativo
+1046,Victor Meireles,Concept Artist,Art Direction,Concept de Cenário,60.0,Pleno,Ativo
+1047,Monique Camargo,Concept Artist,Art Direction,Concept de Cenário,55.0,Pleno,Ativo
+1048,Fabio Godoy,Game Producer,Management,Gestão de Sprints,120.0,Senior,Inativo
+1049,Joana Aguiar,Animador,Characters,Animação 3D,85.0,Pleno,Ativo
+1050,Maurício Caldeira,Artista 3D,Environment,Props,65.0,Junior,Ativo
